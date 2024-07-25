@@ -1,0 +1,72 @@
+// Background colors
+
+.bg-primary-gradient {
+    background: linear-gradient(180deg, #9b58ff 0%, #8837ff 47.92%, #7a20ff 100%);
+}
+
+.color-facebook {
+    color: $facebook;
+}
+
+.color-twitter {
+    color: $twitter;
+}
+
+.color-github {
+    color: $github;
+}
+
+.color-google {
+    color: $google;
+}
+
+.color-linkedin {
+    color: $linkedin;
+}
+
+.color-youtube {
+    color: $youtube;
+}
+.color-slack {
+    color: $slack;
+}
+
+.bg-facebook {
+    background-color: $facebook;
+}
+
+.bg-twitter {
+    background-color: $twitter;
+}
+
+.bg-github {
+    background-color: $github;
+}
+
+.bg-google {
+    background-color: $google;
+}
+
+.bg-linkedin {
+    background-color: $linkedin;
+}
+
+.bg-youtube {
+    background-color: $youtube;
+}
+
+.bg-slack {
+    background-color: $slack;
+}
+
+.bg-instagram {
+    background-color: $instagram;
+}
+
+.bg-primary-blend-gradient {
+    background: var(
+        --bg-gradient-blend,
+        linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0) 100%),
+        linear-gradient(245deg, rgba(108, 73, 250, 0.41) 0%, rgba(211, 38, 142, 0.1) 100%)
+    );
+}

@@ -1,0 +1,27 @@
+// Badge
+
+.filter-badge {
+    background-color: var(--#{$prefix}white);
+    border: 1px solid var(--#{$prefix}border-color);
+    padding: 4px 16px;
+    color: var(--#{$prefix}gray-800);
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    transition:
+        color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+
+    &:hover {
+        color: $white;
+        background-color: var(--#{$prefix}primary);
+        border-color: var(--#{$prefix}primary);
+    }
+
+    &.active {
+        color: $white;
+        background-color: var(--#{$prefix}primary);
+        border-color: var(--#{$prefix}primary);
+    }
+}

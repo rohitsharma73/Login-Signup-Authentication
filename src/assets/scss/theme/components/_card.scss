@@ -1,0 +1,152 @@
+// Card
+
+// Card Lift
+
+.card-lift {
+   transition:
+      transform 0.2s ease-in-out,
+      border-color 0.2s ease-in-out,
+      background-color 0.2s ease-in-out,
+      box-shadow 0.2s ease-in-out;
+   border-radius: $border-radius-lg;
+   &:hover,
+   &:focus,
+   &.active {
+      transform: translateY(-0.25rem);
+      box-shadow:
+         0 10px 15px -3px rgba(0, 0, 0, 0.1),
+         0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+   }
+}
+
+// Card Primary
+
+.card-primary {
+   background-color: var(--#{$prefix}gray-100);
+   transition: 0.5s ease-in-out;
+   cursor: pointer;
+   .card-title {
+      color: var(--#{$prefix}gray-800);
+   }
+
+   &:hover {
+      background-color: var(--#{$prefix}primary);
+      .card-title {
+         color: var(--#{$prefix}white);
+      }
+      .card-text {
+         color: var(--#{$prefix}gray-100);
+      }
+      .card-link {
+         color: var(--#{$prefix}white);
+      }
+   }
+}
+
+// Card hover
+
+.card-hover {
+   transition: 0.3s ease-in-out;
+   box-shadow: 0.2s ease-in-out;
+   cursor: pointer;
+   display: block;
+   & svg {
+      fill: var(--#{$prefix}gray-400);
+   }
+   &:hover {
+      transform: translateY(-0.25rem);
+      box-shadow:
+         0 10px 15px -3px rgba(0, 0, 0, 0.1),
+         0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+      span {
+         border-color: var(--#{$prefix}primary) !important;
+      }
+      .card-text {
+         color: var(--#{$prefix}primary);
+      }
+      & svg {
+         fill: var(--#{$prefix}primary);
+      }
+   }
+}
+
+// Card Grid
+
+.card-grid {
+   border-top: 2px solid var(--#{$prefix}gray-200);
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 100% 100%;
+   transition: all 0.3s ease;
+   height: 230px;
+   cursor: pointer;
+   .card-grid-inner {
+      width: 100%;
+      position: absolute;
+      padding: 24px;
+      background: none;
+      transition: all 0.3s ease;
+      z-index: 2;
+   }
+   @media (min-width: 990px) {
+      .card-grid-heading {
+         max-width: 50%;
+      }
+   }
+
+   .card-grid-text {
+      transition: all 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+   }
+
+   .card-grid-image {
+      position: absolute;
+      right: 0;
+      width: 210px;
+      height: auto;
+      margin: 24px 0px;
+   }
+   @media (min-width: 990px) {
+      &:hover {
+         border-top-color: var(--#{$prefix}primary);
+         border-width: 2px;
+
+         z-index: 3;
+         .card-grid-inner {
+            background-color: var(--#{$prefix}white);
+            box-shadow: $box-shadow;
+         }
+
+         .card-grid-image {
+            opacity: 0;
+            visibility: hidden;
+         }
+         .card-grid-text {
+            opacity: 1;
+            visibility: visible;
+         }
+      }
+   }
+}
+@media (max-width: 990px) {
+   .card-grid {
+      height: auto;
+      .card-grid-inner {
+         position: relative;
+      }
+      .card-grid-image {
+         opacity: 0;
+         visibility: hidden;
+         display: none;
+      }
+      .card-grid-text {
+         opacity: 0;
+         visibility: hidden;
+         display: none;
+      }
+   }
+}

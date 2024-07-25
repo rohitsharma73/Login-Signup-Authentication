@@ -1,0 +1,39 @@
+// Type
+
+// text-reset
+
+.text-reset {
+    &:hover {
+        color: var(--#{$prefix}primary) !important;
+    }
+}
+
+// text-inherit
+
+.text-inherit {
+    color: var(--#{$prefix}gray-800);
+    &:hover {
+        color: var(--#{$prefix}primary) !important;
+    }
+}
+
+// text-white
+.text-white-stable {
+    color: $white !important;
+}
+
+.text-inverse {
+    -webkit-filter: brightness(1) invert(0);
+    filter: brightness(1) invert(0);
+}
+
+.text-white-inverse {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+// for white color
+
+.text-white-stick {
+    color: $white !important;
+}

@@ -1,0 +1,66 @@
+// Body
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+//heading
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+    letter-spacing: -0.03em;
+    font-weight: 700;
+}
+
+//	Figure
+
+figure {
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+}
+
+// Text Selection Color
+::selection {
+    background: var(--#{$prefix}primary-bg-subtle);
+    color: $primary-text-emphasis;
+}
+::-moz-selection {
+    background: var(--#{$prefix}primary-bg-subtle);
+    color: $primary-text-emphasis;
+}
+
+// bold and string font color
+b,
+strong {
+    font-weight: bolder;
+    color: var(--#{$prefix}gray-800);
+}
+
+// blockquote design
+.blockquote {
+    background-color: var(--#{$prefix}gray-100);
+    padding: 24px 24px 24px 56px;
+    border-radius: 12px;
+    position: relative;
+    color: var(--#{$prefix}gray-500);
+    margin: 20px auto;
+}
+.blockquote::before {
+    font-family: "bootstrap-icons";
+    left: 16px;
+    top: 4px;
+    display: block;
+    font-size: 3em;
+    content: "\F6B0";
+    position: absolute;
+    color: var(--#{$prefix}gray-500);
+    font-size: 32px;
+}

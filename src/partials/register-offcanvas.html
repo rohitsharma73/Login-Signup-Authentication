@@ -1,0 +1,81 @@
+<!--Offcanvas-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 480px">
+    <div class="offcanvas-header px-5">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Event Registration</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pb-5 px-5">
+        <p class="mb-4">Sign up for our free online event and get access to all the sessions, on-demand videos, and more.</p>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-12">
+                <label for="eventNameInput" class="form-label">
+                    Name
+                    <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" id="eventNameInput" required />
+                <div class="invalid-feedback">Please enter name.</div>
+            </div>
+            <div class="col-md-12">
+                <label for="eventJobTitleInput" class="form-label">
+                    Job title
+                    <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" id="eventJobTitleInput" required />
+                <div class="invalid-feedback">Please enter Job title.</div>
+            </div>
+            <div class="col-md-12">
+                <label for="eventCompanyInput" class="form-label">
+                    Company
+                    <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" id="eventCompanyInput" required />
+                <div class="invalid-feedback">Please enter company.</div>
+            </div>
+            <div class="col-md-12">
+                <label for="eventEmailInput" class="form-label">
+                    Work email
+                    <span class="text-danger">*</span>
+                </label>
+                <input type="email" class="form-control" id="eventEmailInput" required />
+                <div class="invalid-feedback">Please enter email.</div>
+            </div>
+            <div class="col-md-12">
+                <label for="eventPhoneInput" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="eventPhoneInput" required />
+                <div class="invalid-feedback">Please enter phone.</div>
+            </div>
+            <div class="col-md-12">
+                <label for="eventCountryInput" class="form-label">
+                    Country
+                    <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" id="eventCountryInput" required />
+                <div class="invalid-feedback">Please enter country.</div>
+            </div>
+            <div class="col-md-12">
+                <label for="eventRegionInput" class="form-label">
+                    Which region are you based in?
+                    <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" id="eventRegionInput" required />
+                <div class="invalid-feedback">Please enter region.</div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="blockCheck" />
+                    <label class="form-check-label ms-2 fs-6" for="blockCheck">
+                        *Yes please, I'd like Block and affiliates to use my information for personalized communications, targeted advertising and campaign effectiveness. See the
+                        <a href="#">Privacy Policy</a>
+                        for more details.
+                    </label>
+                </div>
+            </div>
+            <div class="d-grid">
+                <button class="btn btn-primary" type="submit">Register</button>
+            </div>
+            <small>All fields marked with an asterisk (*) are required</small>
+        </form>
+    </div>
+</div>
+<!--offcanvas-->

@@ -1,0 +1,128 @@
+// dark mode
+
+[data-bs-theme="dark"] {
+  $grays: (
+    "100": $gray-800,
+    "200": $gray-700,
+    "800": $gray-300
+  );
+
+  $theme-colors: () !default;
+  $theme-colors: (
+    "light": $gray-800,
+    "dark": $white,
+    "white": $gray-800
+  );
+
+  // Button
+  @each $color, $value in $theme-colors {
+    .btn-#{$color} {
+      @include button-variant($value, $value);
+    }
+  }
+  @each $color, $value in $theme-colors {
+    .btn-outline-#{$color} {
+      @include button-outline-variant($value);
+    }
+  }
+
+  // // Prefix for :root CSS variables
+  @each $color, $value in $grays {
+    --#{$prefix}gray-#{$color}: #{$value};
+  }
+
+  // // Color
+  @each $color, $value in $theme-colors {
+    --#{$prefix}#{$color}: #{$value};
+  }
+
+  .text-inherit {
+    color: $gray-600;
+    &:hover {
+      color: var(--#{$prefix}primary) !important;
+    }
+  }
+  .blockquote {
+    background-color: var(--#{$prefix}gray-900);
+  }
+
+  // theme color
+
+  @each $color, $value in $theme-colors {
+    $color-rgb: to-rgb($value);
+    .text-bg-#{$color} {
+      color: color-contrast($value) if($enable-important-utilities, !important, null);
+      background-color: rgba($color-rgb, var(--#{$prefix}bg-opacity, 1))
+        if($enable-important-utilities, !important, null);
+    }
+    .bg-#{$color} {
+      color: color-contrast($value) if($enable-important-utilities, !important, null);
+      background-color: rgba($color-rgb, var(--#{$prefix}bg-opacity, 1))
+        if($enable-important-utilities, !important, null);
+    }
+    .text-#{$color} {
+      color: $value !important;
+    }
+  }
+  // Gray Color
+  @each $color, $value in $grays {
+    .bg-gray-#{$color} {
+      background-color: $value !important;
+    }
+    .text-gray-#{$color} {
+      color: $value !important;
+    }
+  }
+
+  --#{$prefix}nav-pills-link-active-color: #{$gray-600};
+  --#{$prefix}nav-pills-link-active-bg: #{$gray-800};
+
+  // Logo inverse
+  .navbar-brand {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+  }
+
+  // Logo inverse
+  .text-inverse {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+  }
+
+  .btn-light {
+    --#{$prefix}btn-color: #{$gray-400};
+    --#{$prefix}btn-bg: #{$gray-700};
+    --#{$prefix}btn-border-color: #{$gray-700};
+    --#{$prefix}btn-hover-color: #{$gray-300};
+    --#{$prefix}btn-hover-bg: #{$gray-600};
+    --#{$prefix}btn-hover-border-color: #{$gray-600};
+    --#{$prefix}btn-active-color: #{$gray-300};
+    --#{$prefix}btn-active-bg: #{$gray-600};
+    --#{$prefix}btn-active-border-color: #{$gray-600};
+    --#{$prefix}btn-disabled-color: #{$gray-700};
+    --#{$prefix}btn-disabled-bg: #{$gray-100};
+    --#{$prefix}btn-disabled-border-color: #{$gray-100};
+  }
+
+  @media (max-width: 990px) {
+    .navbar-transparent.navbar-clone {
+      .navbar-brand {
+        filter: brightness(1) invert(0);
+      }
+      .navbar-toggler {
+        border-color: $white;
+        color: $white;
+      }
+    }
+    .navbar-transparent.navbar-stick {
+      .navbar-brand {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+  .table-light {
+    --#{$prefix}table-color: var(--#{$prefix}body-color);
+    --#{$prefix}table-bg: var(--#{$prefix}light);
+    --#{$prefix}table-border-color: #{$table-group-separator-color};
+  }
+}

@@ -1,0 +1,379 @@
+// Buttons
+
+// btn icon
+.btn-icon {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 0.92969rem;
+    font-weight: 400;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+}
+
+.btn-icon.btn-xs {
+    font-size: 0.75rem;
+    width: 1.53125rem;
+    height: 1.53125rem;
+    border-radius: 0.25rem;
+}
+
+.btn-icon.btn-sm {
+    font-size: 0.875rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
+}
+
+.btn-icon.btn-lg {
+    font-size: 1rem;
+    width: 3.36875rem;
+    height: 3.36875rem;
+}
+
+// btn shadow
+
+.btn-shadow {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    &:hover {
+        // transform: scale3d(1.02, 1.02, 1.01);
+        box-shadow: 0 0.25rem 1rem rgba(55, 53, 58, 0.3);
+    }
+}
+
+// btn logo
+
+.btn-logo {
+    @media (max-width: 990px) {
+        border-radius: 50%;
+        height: 56px;
+        width: 56px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// btn light
+
+.btn-light {
+    --#{$prefix}btn-color: #{$gray-500};
+    --#{$prefix}btn-bg: #{$gray-100};
+    --#{$prefix}btn-border-color: #{$gray-100};
+    --#{$prefix}btn-hover-color: #{$gray-700};
+    --#{$prefix}btn-hover-bg: #{$gray-200};
+    --#{$prefix}btn-hover-border-color: #{$gray-200};
+    --#{$prefix}btn-active-color: #{$gray-700};
+    --#{$prefix}btn-active-bg: #{$gray-200};
+    --#{$prefix}btn-active-border-color: #{$gray-200};
+    --#{$prefix}btn-disabled-color: #{$gray-700};
+    --#{$prefix}btn-disabled-bg: #{$gray-100};
+    --#{$prefix}btn-disabled-border-color: #{$gray-100};
+}
+
+// btn white
+
+.btn-white {
+    --#{$prefix}btn-color: #{$gray-700};
+    --#{$prefix}btn-bg: #{$white};
+    --#{$prefix}btn-border-color: #{$white};
+    --#{$prefix}btn-hover-color: #{$primary};
+    --#{$prefix}btn-hover-bg: #{$primary-bg-subtle};
+    --#{$prefix}btn-hover-border-color: #{$primary-bg-subtle};
+    --#{$prefix}btn-active-color: #{$primary};
+    --#{$prefix}btn-active-bg: #{$primary-bg-subtle};
+    --#{$prefix}btn-active-border-color: #{$primary-bg-subtle};
+    --#{$prefix}btn-disabled-color: #{$primary};
+    --#{$prefix}btn-disabled-bg: #{$gray-100};
+    --#{$prefix}btn-disabled-border-color: #{$gray-100};
+}
+
+// btn white
+
+.btn-secondary {
+    --#{$prefix}btn-color: #{$gray-800};
+    --#{$prefix}btn-bg: #{$gray-200};
+    --#{$prefix}btn-border-color: #{$gray-200};
+    --#{$prefix}btn-hover-color: #{$gray-800};
+    --#{$prefix}btn-hover-bg: #{$gray-300};
+    --#{$prefix}btn-hover-border-color: #{$gray-300};
+    --#{$prefix}btn-active-color: #{$gray-800};
+    --#{$prefix}btn-active-bg: #{$gray-300};
+    --#{$prefix}btn-active-border-color: #{$gray-300};
+    --#{$prefix}btn-disabled-color: #{$gray-800};
+    --#{$prefix}btn-disabled-bg: #{$gray-100};
+    --#{$prefix}btn-disabled-border-color: #{$gray-100};
+}
+
+// btn lift
+
+.btn-lift {
+    transition:
+        transform 0.2s ease-in-out,
+        border-color 0.2s ease-in-out,
+        background-color 0.2s ease-in-out,
+        box-shadow 0.2s ease-in-out;
+
+    &:hover {
+        box-shadow: $box-shadow-sm;
+        transform: translateY(-0.25rem);
+        border-color: var(--#{$prefix}primary);
+    }
+}
+
+// Price Switch
+
+.price-wrapper {
+    .price-switcher-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .price-switchers {
+            width: 2rem;
+            height: 1rem;
+            clear: both;
+            text-align: center;
+            position: relative;
+            background-color: var(--#{$prefix}gray-200);
+            border-radius: 1.5rem;
+            border: 0.2rem solid transparent;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            .price-switcher {
+                cursor: pointer;
+                width: 100%;
+                float: left;
+                height: 1rem;
+                line-height: 1rem;
+                position: relative;
+                z-index: 888;
+                transition: 0.3s ease-in-out;
+                text-transform: uppercase;
+                &:nth-child(1).price-switcher-active ~ .switcher-button {
+                    left: 0;
+                }
+                &:nth-child(2).price-switcher-active ~ .switcher-button {
+                    left: 50%;
+                }
+            }
+            .switcher-button {
+                height: 1rem;
+                width: 1rem;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 555;
+                margin: 0;
+                border: none;
+                transition: 0.3s ease-in-out;
+                border-radius: 100%;
+            }
+            .price-switcher.price-switcher-active {
+                color: var(--#{$prefix}white);
+            }
+        }
+    }
+    .price-text {
+        position: relative;
+        height: 2.3rem;
+        .price {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+        }
+        .price-hidden {
+            display: none;
+        }
+        .price-show {
+            animation: priceAnimationShow 0.6s forwards;
+        }
+        .price-hide {
+            animation: priceAnimationFade 0.6s forwards;
+        }
+    }
+}
+
+@keyframes priceAnimationFade {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+}
+@keyframes priceAnimationShow {
+    0% {
+        opacity: 0;
+        transform: translateY(-80%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// btn arrow
+
+.btn-arrow {
+    position: relative;
+    .icon-arrow {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 1rem;
+        opacity: 0;
+        transition: opacity 0.35s ease;
+        color: var(--#{$prefix}gray-800);
+    }
+    &:hover {
+        .icon-arrow {
+            opacity: 1;
+        }
+    }
+}
+
+// Progress bottom to top
+
+.btn-scroll-top {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    display: block;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0.1rem rgba(227, 229, 233, 0.25);
+    z-index: 1010;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.75rem);
+    transition:
+        all 0.2s linear,
+        margin-right 0s;
+    background-color: var(--#{$prefix}white);
+    &:after {
+        position: absolute;
+        font-family: "bootstrap-icons" !important;
+        content: "\F145";
+        text-align: center;
+        line-height: 3rem;
+        font-size: 1.5rem;
+        color: var(--#{$prefix}primary);
+        left: 0;
+        top: 0;
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+        display: block;
+        z-index: 1;
+        transition: all 0.2s linear;
+    }
+    &.active-progress {
+        visibility: visible;
+        transform: translateY(0);
+        @media (min-width: 320px) {
+            opacity: 1;
+        }
+    }
+    & svg path {
+        fill: none;
+    }
+    & svg.progress-square path {
+        stroke: var(--#{$prefix}primary);
+        stroke-width: 2;
+        box-sizing: border-box;
+        transition: all 0.2s linear;
+    }
+}
+
+// pulse wave
+
+.play-btn {
+    font-size: 24px;
+    line-height: 32px;
+    position: relative;
+    background-color: rgba($white, 0.85);
+    &:before {
+        content: "";
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+        -webkit-animation: pulsate1 2s;
+        animation: pulsate1 2s;
+        -webkit-animation-direction: forwards;
+        animation-direction: forwards;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: steps;
+        animation-timing-function: steps;
+        opacity: 1;
+        border-radius: 50%;
+        border: 5px solid var(--#{$prefix}border-color);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px;
+    }
+}
+
+@-webkit-keyframes pulsate1 {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none;
+    }
+}
+
+@keyframes pulsate1 {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none;
+    }
+}
+
+// Social buttons
+
+@each $brand, $value in $social-buttons {
+    .btn-#{$brand} {
+        background-color: var(--#{$prefix}gray-100);
+        color: var(--#{$prefix}gray-500);
+        border: 1px solid var(--#{$prefix}gray-200);
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $value !important;
+            background-color: $value !important;
+            color: $white !important;
+        }
+    }
+}
+
+// Disable button :focus outline
+button:focus {
+    outline: none;
+}

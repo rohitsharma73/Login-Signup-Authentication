@@ -1,0 +1,31 @@
+// Components
+
+// custom classes
+
+@import "./components/docs";
+@import "./components/reboot";
+@import "./components/avatar";
+@import "./components/tansition";
+@import "./components/card";
+@import "./components/nav";
+@import "./components/pattern";
+@import "./components/custom-popovers";
+@import "./components/tooltip";
+@import "./components/collapse";
+@import "./components/hero";
+@import "./components/buttons";
+@import "./components/tables";
+@import "./components/dropdown";
+@import "./components/navbar";
+@import "./components/form";
+@import "./components/gallery";
+@import "./components/badge";
+
+// vendor classes
+@import "./vendors/prism/prism";
+@import "./vendors/swiper/swiper";
+@import "./vendors/plyr/plyr";
+@import "./vendors/intl/intl";
+
+// darkmode classes
+@import "darkmode";

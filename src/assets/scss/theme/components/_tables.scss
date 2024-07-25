@@ -1,0 +1,42 @@
+// Table
+
+// table lg  padding
+
+.table-lg {
+  > :not(caption) > * > * {
+    padding: $table-cell-padding-y-lg $table-cell-padding-x-lg;
+  }
+}
+
+// Table centered
+.table-centered td,
+.table-centered th {
+  vertical-align: middle !important;
+}
+
+// table responsive
+.table-responsive-md,
+.table-responsive-lg,
+.table-responsive-xl {
+  /* width */
+  &::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: var(--#{$prefix}gray-200);
+    border-radius: $border-radius-lg;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: $border-radius-lg;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--#{$prefix}gray-500);
+  }
+}

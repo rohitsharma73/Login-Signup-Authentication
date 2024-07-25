@@ -1,0 +1,4 @@
+tornado
+pymysql
+requests_oauthlib
+python-dotenv

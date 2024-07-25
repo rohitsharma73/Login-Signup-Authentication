@@ -1,0 +1,187 @@
+// Nav line bottom tab (.nav-lb-tab)
+
+.nav-lb-tab {
+   @media (max-width: 576px) {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+         display: none;
+      }
+   }
+   .nav-item {
+      margin: 0rem 1.5rem;
+      .nav-link {
+         border-radius: 0px;
+         padding: 8px 0px;
+         margin-bottom: -1px;
+         font-weight: 500;
+         color: var(--#{$prefix}gray-500);
+         white-space: nowrap;
+         &.active {
+            background-color: transparent;
+            border-bottom: 2px solid var(--#{$prefix}primary);
+            color: var(--#{$prefix}primary);
+         }
+         &:hover {
+            background-color: transparent;
+            border-bottom: 2px solid var(--#{$prefix}primary);
+            color: var(--#{$prefix}primary);
+         }
+      }
+   }
+}
+
+// Bottom line nav
+.nav-line-bottom {
+   border-bottom: 3px solid var(--#{$prefix}border-color);
+   @media (max-width: 576px) {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+         display: none;
+      }
+   }
+   .nav-item {
+      .nav-link {
+         color: var(--#{$prefix}gray-600);
+         border-radius: 0px;
+         margin-bottom: -3px;
+         padding: 12px 55px;
+         font-weight: 500;
+         white-space: nowrap;
+         @media (max-width: 576px) {
+            padding: 0.8rem;
+         }
+         &.active {
+            color: var(--#{$prefix}primary);
+            background-color: transparent;
+            border-bottom: 3px solid var(--#{$prefix}primary);
+            @media (max-width: 576px) {
+               padding: 0.747rem;
+            }
+         }
+         &:hover {
+            color: var(--#{$prefix}primary);
+            background-color: transparent;
+            border-bottom: 3px solid var(--#{$prefix}primary);
+         }
+         .badge {
+            line-height: 1.4;
+         }
+      }
+   }
+}
+// Bottom line nav
+.nav-primary {
+   @media (max-width: 990px) {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+         display: none;
+      }
+   }
+   .nav-item {
+      .nav-link {
+         color: var(--#{$prefix}gray-500);
+         background-color: var(--#{$prefix}light);
+         display: flex;
+         flex-direction: row;
+         align-items: flex-start;
+         padding: 8px 24px;
+         font-weight: 600;
+         white-space: nowrap;
+         font-size: 0.875rem;
+         @media (max-width: 576px) {
+         }
+         &.active {
+            color: var(--#{$prefix}white);
+            background-color: var(--#{$prefix}primary);
+
+            @media (max-width: 576px) {
+            }
+         }
+         &:hover {
+            color: var(--#{$prefix}light);
+            background-color: var(--#{$prefix}primary);
+         }
+      }
+   }
+}
+
+// nav account
+.nav-account {
+   .nav-item {
+      margin: 0.125rem 0rem;
+      .nav-link {
+         padding: 12px 16px;
+         color: var(--#{$prefix}gray-500);
+         line-height: 1;
+         background-color: transparent;
+         border-radius: $border-radius;
+         transition: 0.2s ease-in-out;
+         font-weight: 500;
+         svg {
+            vertical-align: top;
+         }
+         &:hover {
+            background-color: var(--#{$prefix}gray-200);
+            color: var(--#{$prefix}gray-800);
+         }
+         &.active {
+            background-color: var(--#{$prefix}primary);
+            color: $white;
+         }
+      }
+   }
+}
+
+// Sticky Sidebar
+
+.nav-custom-pill {
+   background-color: var(--#{$prefix}gray-200);
+   border-radius: 0.25rem;
+   padding: 0.35rem;
+   font-size: 0.875rem;
+   font-weight: 600;
+   .nav-link {
+      border-radius: 0.25rem;
+      color: var(--#{$prefix}gray-500);
+      padding: 4px 12px;
+      display: flex;
+      align-items: center;
+      transition: color 200ms ease 0s;
+      &.active {
+         color: var(--#{$prefix}dark);
+         box-shadow:
+            rgba(0, 0, 0, 0.05) 0px 0.0625rem 0.1875rem,
+            rgba(0, 0, 0, 0.1) 0px 0.0625rem 0.125rem;
+         transition:
+            transform 200ms ease 0s,
+            width 100ms ease 0s;
+         background-color: var(--#{$prefix}white);
+      }
+   }
+}
+
+.nav-logo {
+   @media (max-width: 990px) {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      overflow-y: hidden;
+      padding-bottom: 26px;
+   }
+   .nav-item {
+      .nav-link {
+         @media (max-width: 990px) {
+            padding: 0rem;
+         }
+         opacity: 0.5;
+         &.active {
+            opacity: 1;
+         }
+      }
+   }
+}

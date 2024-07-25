@@ -1,0 +1,55 @@
+// Inputpass code
+
+.inputpass-code {
+    height: 64px;
+    width: 64px;
+    font-size: 32px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--#{$prefix}gray-800);
+}
+
+// password
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    & + span .passwordToggler {
+        right: 37px !important;
+        top: 33% !important;
+    }
+}
+.was-validated .form-control:valid,
+.form-control.is-valid {
+    & + span .passwordToggler {
+        right: 40px;
+    }
+}
+
+.passwordToggler {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--#{$prefix}gray-800);
+    line-height: 1;
+}
+
+.was-validated .form-check-input:valid ~ .form-check-label,
+.was-validated .form-check-input.is-valid ~ .form-check-label {
+    color: inherit;
+}
+
+.was-validated :valid:not(:required):not(.btn),
+.is-valid:not(:required):not(.btn) {
+    border-color: var(--#{$prefix}gray-300) !important;
+    background-image: none;
+}
+
+.focus-none {
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        border: 0px;
+    }
+}

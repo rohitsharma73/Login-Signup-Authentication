@@ -1,0 +1,308 @@
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/maps";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/utilities";
+
+$utilities: (
+  "border": (
+    property: border,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0
+    )
+  ),
+  "border-top": (
+    property: border-top,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0
+    )
+  ),
+
+  "border-end": (
+    property: border-right,
+    responsive: true,
+    class: border-end,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0
+    )
+  ),
+  "border-bottom": (
+    property: border-bottom,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0
+    )
+  ),
+  "border-start": (
+    property: border-left,
+    responsive: true,
+    class: border-start,
+    values: (
+      null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+      0: 0
+    )
+  ),
+  "border-color": (
+    property: border-color,
+    responsive: true,
+    class: border,
+    local-vars: (
+      "border-opacity": 1
+    ),
+    values: $utilities-border-colors
+  ),
+
+  "rounded-top": (
+    property: border-top-left-radius border-top-right-radius,
+    class: rounded-top,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-radius),
+      0: 0,
+      1: var(--#{$prefix}border-radius-sm),
+      2: var(--#{$prefix}border-radius),
+      3: var(--#{$prefix}border-radius-lg),
+      4: var(--#{$prefix}border-radius-xl),
+      5: var(--#{$prefix}border-radius-xxl),
+      circle: 50%,
+      pill: var(--#{$prefix}border-radius-pill)
+    )
+  ),
+  "rounded-end": (
+    property: border-top-right-radius border-bottom-right-radius,
+    class: rounded-end,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-radius),
+      0: 0,
+      1: var(--#{$prefix}border-radius-sm),
+      2: var(--#{$prefix}border-radius),
+      3: var(--#{$prefix}border-radius-lg),
+      4: var(--#{$prefix}border-radius-xl),
+      5: var(--#{$prefix}border-radius-xxl),
+      circle: 50%,
+      pill: var(--#{$prefix}border-radius-pill)
+    )
+  ),
+  "rounded-bottom": (
+    property: border-bottom-right-radius border-bottom-left-radius,
+    class: rounded-bottom,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-radius),
+      0: 0,
+      1: var(--#{$prefix}border-radius-sm),
+      2: var(--#{$prefix}border-radius),
+      3: var(--#{$prefix}border-radius-lg),
+      4: var(--#{$prefix}border-radius-xl),
+      5: var(--#{$prefix}border-radius-xxl),
+      circle: 50%,
+      pill: var(--#{$prefix}border-radius-pill)
+    )
+  ),
+  "rounded-start": (
+    property: border-bottom-left-radius border-top-left-radius,
+    class: rounded-start,
+    responsive: true,
+    values: (
+      null: var(--#{$prefix}border-radius),
+      0: 0,
+      1: var(--#{$prefix}border-radius-sm),
+      2: var(--#{$prefix}border-radius),
+      3: var(--#{$prefix}border-radius-lg),
+      4: var(--#{$prefix}border-radius-xl),
+      5: var(--#{$prefix}border-radius-xxl),
+      circle: 50%,
+      pill: var(--#{$prefix}border-radius-pill)
+    )
+  ),
+  "letter-spacing": (
+    property: letter-spacing,
+    class: ls,
+    values: (
+      xs: $letter-spacing-xs,
+      sm: $letter-spacing-sm,
+      base: $letter-spacing-base,
+      md: $letter-spacing-md,
+      lg: $letter-spacing-lg,
+      xl: $letter-spacing-xl,
+      xxl: $letter-spacing-xxl
+    )
+  ),
+  "width": (
+    property: width,
+    class: w,
+    responsive: true,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+  "max-width": (
+    property: max-width,
+    class: mw,
+    responsive: true,
+    values: (
+      100: 100%
+    )
+  ),
+  "viewport-width": (
+    property: width,
+    class: vw,
+    responsive: true,
+    values: (
+      100: 100vw
+    )
+  ),
+  "min-viewport-width": (
+    property: min-width,
+    class: min-vw,
+    responsive: true,
+    values: (
+      100: 100vw
+    )
+  ),
+  "height": (
+    property: height,
+    class: h,
+    responsive: true,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+  "max-height": (
+    property: max-height,
+    class: mh,
+    responsive: true,
+    values: (
+      100: 100%
+    )
+  ),
+  "viewport-height": (
+    property: height,
+    class: vh,
+    values: (
+      100: 100vh
+    )
+  ),
+  "min-viewport-height": (
+    property: min-height,
+    class: min-vh,
+    responsive: true,
+    values: (
+      100: 100vh
+    )
+  ),
+  "position": (
+    property: position,
+    responsive: true,
+    values: static relative absolute fixed sticky
+  ),
+  "top": (
+    property: top,
+    responsive: true,
+    values: $position-values
+  ),
+  "bottom": (
+    property: bottom,
+    responsive: true,
+    values: $position-values
+  ),
+  "start": (
+    property: left,
+    class: start,
+    responsive: true,
+    values: $position-values
+  ),
+  "end": (
+    property: right,
+    class: end,
+    values: $position-values
+  ),
+  "translate-middle": (
+    property: transform,
+    class: translate-middle,
+    responsive: true,
+    values: (
+      null: translate(-50%, -50%),
+      x: translateX(-50%),
+      y: translateY(-50%)
+    )
+  ),
+  "background-color": (
+    property: background-color,
+    class: bg,
+    local-vars: (
+      "bg-opacity": 1
+    ),
+    values:
+      map-merge(
+        $utilities-bg-colors,
+        (
+          "transparent": transparent,
+          "body-secondary": rgba(var(--#{$prefix}secondary-bg-rgb), var(--#{$prefix}bg-opacity)),
+          "body-tertiary": rgba(var(--#{$prefix}tertiary-bg-rgb), var(--#{$prefix}bg-opacity)),
+          "primary-dark": $primary-bg-subtle-dark,
+          "info-dark": $info-bg-subtle-dark,
+          "warning-dark": $warning-bg-subtle-dark,
+          "success-dark": $success-bg-subtle-dark,
+          "secondary-dark": $secondary-bg-subtle-dark,
+          "danger-dark": $danger-bg-subtle-dark,
+          "gray-100": $gray-100,
+          "gray-200": $gray-200,
+          "gray-300": $gray-300,
+          "gray-400": $gray-400,
+          "gray-500": $gray-500,
+          "gray-600": $gray-600,
+          "gray-700": $gray-700,
+          "gray-800": $gray-800,
+          "gray-900": $gray-900,
+          "gray-950": $gray-950
+        )
+      )
+  ),
+  "bg-opacity": (
+    css-var: true,
+    class: bg-opacity,
+    values: (
+      10: 0.1,
+      25: 0.25,
+      50: 0.5,
+      75: 0.75,
+      100: 1
+    )
+  ),
+  "subtle-background-color": (
+    property: background-color,
+    class: bg,
+    values: $utilities-bg-subtle
+  ),
+  "white-space": (
+    property: white-space,
+    class: text,
+    responsive: true,
+    values: (
+      wrap: normal,
+      nowrap: nowrap
+    )
+  )
+);
+
+@import "./utilities/type.scss";
+@import "./utilities/icon-shape";
+@import "./utilities/border";
+@import "./utilities/background";
+
+@import "../../../../node_modules/bootstrap/scss/utilities/api";

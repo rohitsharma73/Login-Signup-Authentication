@@ -1,0 +1,1475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head/meta.html")
+    <link
+      rel="stylesheet"
+      href="@@webRoot/node_modules/swiper/swiper-bundle.min.css"
+    />
+    @@include("partials/head/head-links.html")
+    @@include("partials/head/analytics.html")
+    @@include("partials/head/clarity.html")
+    <title>Saas v2 Business - Responsive Website Template | Block</title>
+  </head>
+  <body>
+    @@include("partials/navbar.html",{ "classList": "navbar-light w-100" })
+    <main>
+      <!--Hero section start-->
+      <section class="container py-lg-8 py-5" data-cue="fadeIn">
+        <div class="row justify-content-center">
+          <div
+            class="col-xl-8 col-lg-10 col-12"
+            data-cues="zoomIn"
+            data-group="page-title"
+            data-delay="700"
+          >
+            <div class="text-center d-flex flex-column gap-5">
+              <div class="d-flex flex-column gap-3 mx-lg-8">
+                <h1 class="mb-0 display-4">
+                  Personalise healthcare info and medical communications with AI
+                </h1>
+                <p class="mb-0 lead">
+                  Enables pharma, healthcare, insurance and medical device
+                  companies with hyper-personalised and localised communications
+                  with our LLM models
+                </p>
+              </div>
+              <div class="d-flex flex-row gap-4 justify-content-center">
+                <a href="#" class="btn" style="background-color: #3F8A57; color: white;">Get Started</a>
+                <a href="#" class="icon-link icon-link-hover">
+                  <span style="color: #3F8A57;">Explore products</span>
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill=" #3F8A57" <!-- Change the fill color here -->
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  ></path>
+                </svg>
+                
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="pattern-square"></div>
+      <section class="container py-lg-8 py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-12">
+            <div class="text-center position-relative" data-cue="zoomIn">
+              <img
+                src="./assets/images/landings/sass-v3/hero-app-screen.png"
+                class="img-fluid bg-light p-3 rounded-3 border"
+                alt=""
+              />
+              <div
+                class="position-absolute top-50 d-none d-lg-block ms-lg-n5"
+                data-cue="slideInLeft"
+              >
+                <img
+                  src="./assets/images/landings/sass-v3/hero-frame-left.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="position-absolute top-50 end-0 translate-middle me-n9 d-none d-lg-block"
+              >
+                <img
+                  src="./assets/images/landings/sass-v3/hero-frame-right-1.svg"
+                  class="me-n9 mb-4"
+                  alt=""
+                  data-cue="slideInRight"
+                />
+                <br />
+                <img
+                  src="./assets/images/landings/sass-v3/hero-frame-right-2.svg"
+                  alt=""
+                  data-cue="slideInRight"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Hero section close-->
+
+      <!--Trusted worldwide start-->
+      <div class="py-5" data-cue="fadeIn">
+        <div class="container py-2">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <div
+                class="swiper-container swiper"
+                id="swiper-1"
+                data-pagination-type=""
+                data-speed="400"
+                data-space-between="100"
+                data-pagination="true"
+                data-navigation="false"
+                data-autoplay="true"
+                data-autoplay-delay="3000"
+                data-breakpoints='{"480": {"slidesPerView": 2}, "768": {"slidesPerView": 3}, "1024": {"slidesPerView": 5}}'
+              >
+                <div class="swiper-wrapper pb-6">
+                  <div class="swiper-slide">
+                    <figure class="text-center">
+                      <img
+                        src="@@webRoot/assets/images/client-logo/clients-logo-1.svg"
+                        alt="logo"
+                      />
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure class="text-center">
+                      <img
+                        src="@@webRoot/assets/images/client-logo/clients-logo-2.svg"
+                        alt="logo"
+                      />
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure class="text-center">
+                      <img
+                        src="@@webRoot/assets/images/client-logo/clients-logo-3.svg"
+                        alt="logo"
+                      />
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure class="text-center">
+                      <img
+                        src="@@webRoot/assets/images/client-logo/clients-logo-4.svg"
+                        alt="logo"
+                      />
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure class="text-center">
+                      <img
+                        src="@@webRoot/assets/images/client-logo/clients-logo-5.svg"
+                        alt="logo"
+                      />
+                    </figure>
+                  </div>
+                  <!-- Add more slides as needed -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-navigation">
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Trusted worldwide end-->
+
+      <!--Feature to boost Start-->
+      <section class="container py-lg-8 py-5" data-cue="fadeIn">
+        <div class="row justify-content-center mb-8">
+          <div class="col-xl-6 col-lg-10 col-12">
+            <div class="text-center d-flex flex-column gap-5">
+              <div class="d-flex justify-content-center">
+                <span
+                  class=" bg-opacity-10 border px-3 py-2 fs-6 rounded-pill lh-1 align-items-center d-flex"
+                  style="background-color: #3F8A57; color: white;">
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="#FFFFFF" <!-- Change the fill color to white -->
+                >
+                  <g clip-path="url(#clip0_1717_21196)">
+                    <path
+                      d="M11.7512 0.681967C11.8491 0.738706 11.9248 0.826957 11.966 0.932305C12.0073 1.03765 12.0116 1.15387 11.9782 1.26197L10.1772 7.11397H13.5002C13.5979 7.11393 13.6934 7.14249 13.775 7.19612C13.8566 7.24975 13.9207 7.3261 13.9594 7.41576C13.9981 7.50541 14.0098 7.60444 13.9928 7.70062C13.9759 7.7968 13.9312 7.88591 13.8642 7.95697L5.8642 16.457C5.78679 16.5393 5.68379 16.5929 5.57197 16.6092C5.46016 16.6255 5.34613 16.6034 5.24847 16.5466C5.15081 16.4898 5.07528 16.4015 5.03419 16.2963C4.9931 16.191 4.98887 16.0749 5.0222 15.967L6.8232 10.114H3.5002C3.40254 10.114 3.30702 10.0854 3.22541 10.0318C3.1438 9.97818 3.07968 9.90183 3.04096 9.81217C3.00225 9.72252 2.99064 9.62349 3.00757 9.52731C3.02449 9.43114 3.06921 9.34202 3.1362 9.27097L11.1362 0.770967C11.2135 0.688766 11.3164 0.635136 11.428 0.618796C11.5397 0.602456 11.6536 0.624367 11.7512 0.680967V0.681967ZM4.6572 9.11397H7.5002C7.57845 9.11395 7.65561 9.1323 7.72547 9.16754C7.79533 9.20278 7.85595 9.25392 7.90245 9.31686C7.94895 9.37979 7.98002 9.45276 7.99318 9.5299C8.00633 9.60703 8.0012 9.68618 7.9782 9.76097L6.6102 14.204L12.3422 8.11397H9.5002C9.42195 8.11398 9.34479 8.09563 9.27493 8.06039C9.20506 8.02515 9.14445 7.97401 9.09795 7.91108C9.05145 7.84814 9.02038 7.77517 9.00722 7.69804C8.99406 7.6209 8.99919 7.54176 9.0222 7.46697L10.3902 3.02397L4.6572 9.11397Z"
+                      fill="#FFFFFF" <!-- Change the fill color to white -->
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1717_21196">
+                      <rect
+                        width="16"
+                        height="16"
+                        fill="white"
+                        transform="translate(0.5 0.614014)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                
+                
+                  <span class="ms-1 text-uppercase ls-md fw-semibold"
+                    >Use Cases</span
+                  >
+                </span>
+              </div>
+              <div class="d-flex flex-column gap-3 mx-lg-8">
+                <h1 class="mb-0">
+                  A co-pilot to generate regulatory compliant and factually
+                  correct medical data
+                </h1>
+                <p class="mb-0">
+                  Create hyper-personalised medical information for hospitals,
+                  HCPs and patients with FlocCare's in-house LLM's
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-6">
+          <div class="col-12" data-cue="zoomIn">
+            <div
+              class="border rounded-3 bg-white bg-opacity-25 overflow-hidden border-white"
+            >
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-12" data-cue="slideInLeft">
+                  <div class="p-lg-8 p-5 my-lg-4 d-flex flex-column gap-4">
+                    
+
+                    <div>
+                      <h3>
+                        Hyper-personalize <br />
+                        B2C and<br />B2B2<br />Coutreach
+                      </h3>
+                      <p class="mb-0 text-body text-dark">
+                        Use the power of generative AI to create content that
+                        your
+                        <br />consumers, patients or potential users will
+                        connect with. Our model works on:
+                      </p>
+                    </div>
+                    <div>
+                      <ol class="list-group list-group-flush">
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 10px;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Multiple SEA and JAPAC languages
+                        </li>
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 10px;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Multiple social media channels
+                        </li>
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 10px;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Trained on your product and healthcare sector
+                        </li>
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 10px;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Trained on regulatory requirements
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-6 col-12 d-lg-flex justify-content-center"
+                  data-cue="slideInRight"
+                >
+                  <figure class="p-3 p-lg-0 w-50">
+                    <img
+                      src="./assets/images/landings/sass-v3/feature-1.png"
+                      class="img-fluid"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" data-cue="zoomIn">
+            <div
+              class="border rounded-3 bg-white bg-opacity-25 overflow-hidden border-white"
+            >
+              <div class="row align-items-center">
+                <div
+                  class="col-lg-6 col-12 d-lg-flex justify-content-center"
+                  data-cue="slideInLeft"
+                >
+                  <figure class="p-3 p-lg-0 w-50">
+                    <img
+                      src="./assets/images/landings/sass-v3/feature-2.png"
+                      class="img-fluid"
+                    />
+                  </figure>
+                </div>
+                <div class="col-lg-6 col-12" data-cue="slideInRight">
+                  <div
+                    class="p-lg-8 p-5 my-lg-4 d-flex flex-column gap-4 text-end"
+                  >
+                    
+                    <div>
+                      <h3>
+                        Latest Medical <br />
+                        Innovation <br />outreach to <br />clinicians and
+                        <br />hospitals
+                      </h3>
+                      <p class="mb-0 text-body text-dark">
+                        Train clinicians and hospitals on latest medical
+                        <br />innovations across medical devices,pharma,clinical
+                        <br />trial and more.Our model can generate & customise:
+                      </p>
+                    </div>
+                    <div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 4.0625rem;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Images with your medical device
+                        </li>
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 6.25rem;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Workshops,educational info
+                        </li>
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 2.5rem;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Preference for the target consumer
+                        </li>
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 2.5rem;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Trained on regulatory requirements
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" data-cue="zoomIn">
+            <div
+              class="border rounded-3 bg-white bg-opacity-25 overflow-hidden border-white"
+            >
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-12" data-cue="slideInLeft">
+                  <div class="p-lg-8 p-5 my-lg-4 d-flex flex-column gap-4">
+                    
+                    <div>
+                      <h3>
+                        Engage your<br />
+                        consumers<br />with information <br />they will
+                        <br />appreciate
+                      </h3>
+                      <p class="mb-0 text-body text-dark">
+                        Create highly personalized content at scale in just 60
+                        seconds
+                        <br />to reach out to your customers,bringing them right
+                        info at the <br />right time
+                      </p>
+                    </div>
+                    <div>
+                      <ol class="list-group list-group-flush">
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 10px;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Be ready with content 30 days in advance
+                        </li>
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 10px;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Use prompts from our AI to generate thematic content
+                        </li>
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 10px;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Use the power of LLMs built with clinicians ,
+                          marketers and AI experts
+                        </li>
+                        <li class="list-group-item disabled border-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20"
+                            height="20"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 520 520"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              margin-right: 10px;
+                            "
+                            xml:space="preserve"
+                            class=""
+                          >
+                            <g>
+                              <path
+                                d="M180.555 468.969a10 10 0 0 1-8.624-4.938C134.552 400.35 34.947 264.82 33.945 263.458a10 10 0 0 1 1.026-13.039l30.618-30.255a10 10 0 0 1 12.754-1.086l100.127 69.916c66.568-85.516 128.43-144.533 169.09-179.307 45.575-38.983 74.551-56.5 75.762-57.23a10 10 0 0 1 5.146-1.426H478a10 10 0 0 1 6.651 17.469c-73.431 65.4-149.775 169.313-200.888 244.966-55.563 82.234-94.135 149.779-94.518 150.452a10 10 0 0 1-8.624 5.05z"
+                                data-name="3-Check"
+                                fill="#000000"
+                                opacity="1"
+                                data-original="#000000"
+                                class=""
+                              ></path>
+                            </g>
+                          </svg>
+                          Trained on regulatory requirements
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-6 col-12 d-lg-flex justify-content-center"
+                  data-cue="slideInRight"
+                >
+                  <figure class="p-3 p-lg-0 w-50">
+                    <img
+                      src="./assets/images/landings/sass-v3/feature-3.png"
+                      class="img-fluid"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Feature to boost end-->
+
+      <!--More focus start-->
+      <section class="container py-lg-8 py-5" data-cue="fadeIn">
+        <div class="row mb-8">
+          <div class="col-xl-5 col-lg-10 col-12">
+            <div class="d-flex flex-column gap-5">
+              <div class="d-flex">
+                <span
+                  class=" bg-opacity-10 border px-3 py-2 fs-6 rounded-pill lh-1 align-items-center d-flex"
+                  style="background-color: #3F8A57; color: white;" >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="#FFFFFF"
+                  >
+                    <g clip-path="url(#clip0_1717_21196)">
+                      <path
+                        d="M11.7512 0.681967C11.8491 0.738706 11.9248 0.826957 11.966 0.932305C12.0073 1.03765 12.0116 1.15387 11.9782 1.26197L10.1772 7.11397H13.5002C13.5979 7.11393 13.6934 7.14249 13.775 7.19612C13.8566 7.24975 13.9207 7.3261 13.9594 7.41576C13.9981 7.50541 14.0098 7.60444 13.9928 7.70062C13.9759 7.7968 13.9312 7.88591 13.8642 7.95697L5.8642 16.457C5.78679 16.5393 5.68379 16.5929 5.57197 16.6092C5.46016 16.6255 5.34613 16.6034 5.24847 16.5466C5.15081 16.4898 5.07528 16.4015 5.03419 16.2963C4.9931 16.191 4.98887 16.0749 5.0222 15.967L6.8232 10.114H3.5002C3.40254 10.114 3.30702 10.0854 3.22541 10.0318C3.1438 9.97818 3.07968 9.90183 3.04096 9.81217C3.00225 9.72252 2.99064 9.62349 3.00757 9.52731C3.02449 9.43114 3.06921 9.34202 3.1362 9.27097L11.1362 0.770967C11.2135 0.688766 11.3164 0.635136 11.428 0.618796C11.5397 0.602456 11.6536 0.624367 11.7512 0.680967V0.681967ZM4.6572 9.11397H7.5002C7.57845 9.11395 7.65561 9.1323 7.72547 9.16754C7.79533 9.20278 7.85595 9.25392 7.90245 9.31686C7.94895 9.37979 7.98002 9.45276 7.99318 9.5299C8.00633 9.60703 8.0012 9.68618 7.9782 9.76097L6.6102 14.204L12.3422 8.11397H9.5002C9.42195 8.11398 9.34479 8.09563 9.27493 8.06039C9.20506 8.02515 9.14445 7.97401 9.09795 7.91108C9.05145 7.84814 9.02038 7.77517 9.00722 7.69804C8.99406 7.6209 8.99919 7.54176 9.0222 7.46697L10.3902 3.02397L4.6572 9.11397Z"
+                        fill="#FFFFFF"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1717_21196">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="translate(0.5 0.614014)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="ms-1 text-uppercase ls-md fw-semibold"
+                    >Features</span
+                  >
+                </span>
+              </div>
+              <div class="d-flex flex-column gap-3">
+                <h1 class="mb-0">
+                  Customised solutions to help your healthcare goals, in 60
+                  seconds.
+                </h1>
+                <p class="mb-0">
+                  Our gen AI engine creates informative healthcare content to
+                  educate and engage healthcare consumers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-6 mb-6">
+          <div class="col-lg-4 col-12" data-cue="zoomIn">
+            <div class="card overflow-hidden card-lift">
+              <div class="card-body me-xl-8">
+                <h4>Demographic Personalisation</h4>
+                <p class="mb-0">
+                  Build healthcare content suitable for different location,
+                  language, persona, age and more
+                </p>
+              </div>
+              <div class="text-end ms-4">
+                <figure>
+                  <img
+                    src="./assets/images/landings/sass-v3/feedback.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12" data-cue="zoomIn">
+            <div class="card card-lift">
+              <div class="card-body me-xl-8">
+                <h4>Regulatory Compliance</h4>
+                <p class="mb-0">
+                  Get an AI generated copy that is compliant for your product
+                  class and location
+                </p>
+              </div>
+              <div class="text-end ms-4">
+                <figure>
+                  <img
+                    src="./assets/images/landings/sass-v3/product-roadmap.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12" data-cue="zoomIn">
+            <div class="card card-lift">
+              <div class="card-body me-xl-8">
+                <h4>For B2B and B2B2C</h4>
+                <p class="mb-0">
+                  Generate content for HCP education, patient education, public
+                  health awareness and more
+                </p>
+              </div>
+              <div class="text-end ms-4">
+                <figure>
+                  <img
+                    src="./assets/images/landings/sass-v3/changelog.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-lg-3 row-cols-md-2 gy-5">
+          <div class="col" data-cue="zoomIn" data-duration="1500">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div>
+                    <div
+                      class="icon-shape icon-lg  bg-opacity-10 border  rounded-3"
+                      style="background-color: #2F4F4F; color: white;">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="27"
+                        viewBox="0 0 18 27"
+                        fill="#FFD700"
+                      >
+                        <path
+                          d="M18 7.06901V2.61401C18 2.08358 17.7893 1.57487 17.4142 1.1998C17.0391 0.824727 16.5304 0.614014 16 0.614014H2C1.46957 0.614014 0.960859 0.824727 0.585786 1.1998C0.210714 1.57487 0 2.08358 0 2.61401V7.11401C0.000675612 7.42438 0.0732624 7.73038 0.212065 8.00798C0.350867 8.28559 0.552109 8.52725 0.8 8.71401L7.33375 13.614L0.8 18.514C0.552109 18.7008 0.350867 18.9424 0.212065 19.22C0.0732624 19.4977 0.000675612 19.8036 0 20.114V24.614C0 25.1444 0.210714 25.6532 0.585786 26.0282C0.960859 26.4033 1.46957 26.614 2 26.614H16C16.5304 26.614 17.0391 26.4033 17.4142 26.0282C17.7893 25.6532 18 25.1444 18 24.614V20.159C17.9993 19.8498 17.9273 19.545 17.7896 19.2681C17.652 18.9913 17.4523 18.7499 17.2062 18.5628L10.6588 13.614L17.2062 8.66526C17.4523 8.4781 17.652 8.23673 17.7896 7.95989C17.9273 7.68304 17.9993 7.37819 18 7.06901ZM2 2.61401H16V7.06901L15.2787 7.61401H2.66625L2 7.11401V2.61401ZM9 12.364L5.33375 9.61401H12.6338L9 12.364ZM16 24.614H2V20.114L8 15.614V18.614C8 18.8792 8.10536 19.1336 8.29289 19.3211C8.48043 19.5087 8.73478 19.614 9 19.614C9.26522 19.614 9.51957 19.5087 9.70711 19.3211C9.89464 19.1336 10 18.8792 10 18.614V15.624L16 20.159V24.614Z"
+                          fill="#FFD700"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ms-4">
+                    <h4>50X Faster</h4>
+                    <p class="mb-0">
+                      Leverage gen AI for super fast content creation
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-cue="zoomIn" data-duration="1500">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div>
+                    <div
+                      class="icon-shape icon-lg  bg-opacity-10 border  rounded-3"
+                      style="background-color: #2F4F4F; color: white;"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="#FFD700"
+                      >
+                        <path
+                          opacity="0.2"
+                          d="M23 16.614C23 17.9985 22.5895 19.3519 21.8203 20.503C21.0511 21.6542 19.9579 22.5514 18.6788 23.0812C17.3997 23.611 15.9922 23.7496 14.6344 23.4795C13.2765 23.2094 12.0292 22.5427 11.0503 21.5638C10.0713 20.5848 9.4046 19.3375 9.13451 17.9796C8.86441 16.6218 9.00303 15.2143 9.53285 13.9352C10.0627 12.6561 10.9599 11.5629 12.111 10.7937C13.2622 10.0246 14.6155 9.61401 16 9.61401C17.8565 9.61401 19.637 10.3515 20.9497 11.6643C22.2625 12.977 23 14.7575 23 16.614Z"
+                          fill="#FFD700"
+                        />
+                        <path
+                          d="M15 5.61401V4.61401C15 4.3488 15.1054 4.09444 15.2929 3.90691C15.4804 3.71937 15.7348 3.61401 16 3.61401C16.2652 3.61401 16.5196 3.71937 16.7071 3.90691C16.8946 4.09444 17 4.3488 17 4.61401V5.61401C17 5.87923 16.8946 6.13358 16.7071 6.32112C16.5196 6.50866 16.2652 6.61401 16 6.61401C15.7348 6.61401 15.4804 6.50866 15.2929 6.32112C15.1054 6.13358 15 5.87923 15 5.61401ZM24 16.614C24 18.1963 23.5308 19.743 22.6518 21.0586C21.7727 22.3742 20.5233 23.3995 19.0615 24.0051C17.5997 24.6106 15.9911 24.769 14.4393 24.4603C12.8874 24.1516 11.462 23.3897 10.3431 22.2709C9.22433 21.152 8.4624 19.7266 8.15372 18.1747C7.84504 16.6229 8.00346 15.0144 8.60896 13.5525C9.21447 12.0907 10.2398 10.8413 11.5554 9.96226C12.871 9.08321 14.4177 8.61401 16 8.61401C18.121 8.61633 20.1545 9.45993 21.6543 10.9597C23.1541 12.4595 23.9977 14.493 24 16.614ZM22 16.614C22 15.4273 21.6481 14.2673 20.9888 13.2806C20.3295 12.2939 19.3925 11.5249 18.2961 11.0707C17.1997 10.6166 15.9933 10.4978 14.8295 10.7293C13.6656 10.9608 12.5965 11.5323 11.7574 12.3714C10.9182 13.2105 10.3468 14.2796 10.1153 15.4435C9.88378 16.6074 10.0026 17.8138 10.4567 18.9101C10.9108 20.0065 11.6799 20.9435 12.6666 21.6028C13.6533 22.2621 14.8133 22.614 16 22.614C17.5908 22.6124 19.116 21.9797 20.2408 20.8548C21.3657 19.73 21.9983 18.2048 22 16.614ZM7.2925 9.32151C7.48014 9.50915 7.73464 9.61457 8 9.61457C8.26536 9.61457 8.51986 9.50915 8.7075 9.32151C8.89514 9.13387 9.00056 8.87938 9.00056 8.61401C9.00056 8.34865 8.89514 8.09415 8.7075 7.90651L7.7075 6.90651C7.51986 6.71887 7.26536 6.61346 7 6.61346C6.73464 6.61346 6.48014 6.71887 6.2925 6.90651C6.10486 7.09415 5.99944 7.34865 5.99944 7.61401C5.99944 7.87938 6.10486 8.13387 6.2925 8.32151L7.2925 9.32151ZM7.2925 23.9065L6.2925 24.9065C6.10486 25.0942 5.99944 25.3486 5.99944 25.614C5.99944 25.8794 6.10486 26.1339 6.2925 26.3215C6.48014 26.5092 6.73464 26.6146 7 26.6146C7.26536 26.6146 7.51986 26.5092 7.7075 26.3215L8.7075 25.3215C8.80041 25.2286 8.87411 25.1183 8.92439 24.9969C8.97468 24.8755 9.00056 24.7454 9.00056 24.614C9.00056 24.4826 8.97468 24.3525 8.92439 24.2311C8.87411 24.1097 8.80041 23.9994 8.7075 23.9065C8.61459 23.8136 8.50429 23.7399 8.3829 23.6896C8.2615 23.6393 8.13139 23.6135 8 23.6135C7.86861 23.6135 7.7385 23.6393 7.6171 23.6896C7.49571 23.7399 7.38541 23.8136 7.2925 23.9065ZM24 9.61401C24.1314 9.61412 24.2615 9.58834 24.3829 9.53815C24.5042 9.48796 24.6146 9.41435 24.7075 9.32151L25.7075 8.32151C25.8951 8.13387 26.0006 7.87938 26.0006 7.61401C26.0006 7.34865 25.8951 7.09415 25.7075 6.90651C25.5199 6.71887 25.2654 6.61346 25 6.61346C24.7346 6.61346 24.4801 6.71887 24.2925 6.90651L23.2925 7.90651C23.1525 8.04637 23.0571 8.22462 23.0185 8.41871C22.9798 8.61279 22.9996 8.81398 23.0754 8.9968C23.1511 9.17963 23.2794 9.33586 23.444 9.44573C23.6086 9.5556 23.8021 9.61417 24 9.61401ZM24.7075 23.9065C24.5199 23.7189 24.2654 23.6135 24 23.6135C23.7346 23.6135 23.4801 23.7189 23.2925 23.9065C23.1049 24.0942 22.9994 24.3486 22.9994 24.614C22.9994 24.8794 23.1049 25.1339 23.2925 25.3215L24.2925 26.3215C24.3854 26.4144 24.4957 26.4881 24.6171 26.5384C24.7385 26.5887 24.8686 26.6146 25 26.6146C25.1314 26.6146 25.2615 26.5887 25.3829 26.5384C25.5043 26.4881 25.6146 26.4144 25.7075 26.3215C25.8004 26.2286 25.8741 26.1183 25.9244 25.9969C25.9747 25.8755 26.0006 25.7454 26.0006 25.614C26.0006 25.4826 25.9747 25.3525 25.9244 25.2311C25.8741 25.1097 25.8004 24.9994 25.7075 24.9065L24.7075 23.9065ZM5 15.614H4C3.73478 15.614 3.48043 15.7194 3.29289 15.9069C3.10536 16.0944 3 16.3488 3 16.614C3 16.8792 3.10536 17.1336 3.29289 17.3211C3.48043 17.5087 3.73478 17.614 4 17.614H5C5.26522 17.614 5.51957 17.5087 5.70711 17.3211C5.89464 17.1336 6 16.8792 6 16.614C6 16.3488 5.89464 16.0944 5.70711 15.9069C5.51957 15.7194 5.26522 15.614 5 15.614ZM16 26.614C15.7348 26.614 15.4804 26.7194 15.2929 26.9069C15.1054 27.0944 15 27.3488 15 27.614V28.614C15 28.8792 15.1054 29.1336 15.2929 29.3211C15.4804 29.5087 15.7348 29.614 16 29.614C16.2652 29.614 16.5196 29.5087 16.7071 29.3211C16.8946 29.1336 17 28.8792 17 28.614V27.614C17 27.3488 16.8946 27.0944 16.7071 26.9069C16.5196 26.7194 16.2652 26.614 16 26.614ZM28 15.614H27C26.7348 15.614 26.4804 15.7194 26.2929 15.9069C26.1054 16.0944 26 16.3488 26 16.614C26 16.8792 26.1054 17.1336 26.2929 17.3211C26.4804 17.5087 26.7348 17.614 27 17.614H28C28.2652 17.614 28.5196 17.5087 28.7071 17.3211C28.8946 17.1336 29 16.8792 29 16.614C29 16.3488 28.8946 16.0944 28.7071 15.9069C28.5196 15.7194 28.2652 15.614 28 15.614Z"
+                          fill="#FFD700"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ms-4">
+                    <h4>20X Cost Effective</h4>
+                    <p class="mb-0">
+                      Train AI model once, generate content every 60 seconds.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-cue="zoomIn" data-duration="1500">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div>
+                    <div
+                      class="icon-shape icon-lg bg-opacity-10 border rounded-3"
+                      style="background-color: #2F4F4F; color: white;"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="#FFD700"
+                      >
+                        <path
+                          opacity="0.2"
+                          d="M25.9824 16.0114L28.0799 13.3864C27.797 12.323 27.3736 11.3019 26.8211 10.3502L23.4836 9.97519C23.217 9.6748 22.9327 9.39055 22.6324 9.12394L22.2574 5.78519C21.3046 5.23597 20.2832 4.81564 19.2199 4.53519L16.5949 6.63144C16.1935 6.60769 15.7912 6.60769 15.3899 6.63144L12.7649 4.53394C11.7048 4.81768 10.6872 5.24097 9.73861 5.79269L9.36361 9.13019C9.06323 9.3968 8.77898 9.68105 8.51236 9.98144L5.17361 10.3564C4.6244 11.3092 4.20407 12.3306 3.92361 13.3939L6.01986 16.0189C5.99611 16.4203 5.99611 16.8226 6.01986 17.2239L3.92236 19.8489C4.20527 20.9124 4.62858 21.9335 5.18111 22.8852L8.51861 23.2602C8.78523 23.5606 9.06948 23.8448 9.36986 24.1114L9.74486 27.4502C10.6976 27.9994 11.719 28.4197 12.7824 28.7002L15.4074 26.6039C15.8087 26.6277 16.211 26.6277 16.6124 26.6039L19.2374 28.7014C20.3008 28.4185 21.3219 27.9952 22.2736 27.4427L22.6486 24.1052C22.949 23.8386 23.2332 23.5543 23.4999 23.2539L26.8386 22.8789C27.3878 21.9262 27.8082 20.9048 28.0886 19.8414L25.9924 17.2164C26.0128 16.8149 26.0094 16.4126 25.9824 16.0114ZM15.9999 21.6139C15.011 21.6139 14.0443 21.3207 13.222 20.7713C12.3998 20.2219 11.7589 19.441 11.3805 18.5274C11.002 17.6137 10.903 16.6084 11.0959 15.6385C11.2889 14.6686 11.7651 13.7777 12.4643 13.0784C13.1636 12.3791 14.0545 11.9029 15.0244 11.71C15.9943 11.5171 16.9997 11.6161 17.9133 11.9945C18.8269 12.373 19.6078 13.0138 20.1572 13.8361C20.7066 14.6583 20.9999 15.625 20.9999 16.6139C20.9999 17.94 20.4731 19.2118 19.5354 20.1495C18.5977 21.0872 17.3259 21.6139 15.9999 21.6139Z"
+                          fill="#FFD700"
+                        />
+                        <path
+                          d="M16.0001 10.6141C14.8134 10.6141 13.6533 10.966 12.6666 11.6253C11.6799 12.2845 10.9109 13.2216 10.4568 14.318C10.0027 15.4143 9.88383 16.6207 10.1153 17.7846C10.3469 18.9485 10.9183 20.0176 11.7574 20.8567C12.5965 21.6958 13.6656 22.2673 14.8295 22.4988C15.9934 22.7303 17.1998 22.6115 18.2962 22.1573C19.3925 21.7032 20.3296 20.9342 20.9889 19.9475C21.6482 18.9608 22.0001 17.8008 22.0001 16.6141C21.9984 15.0233 21.3657 13.4981 20.2409 12.3733C19.116 11.2484 17.5908 10.6157 16.0001 10.6141ZM16.0001 20.6141C15.2089 20.6141 14.4356 20.3795 13.7778 19.9399C13.12 19.5004 12.6073 18.8757 12.3045 18.1448C12.0018 17.4139 11.9226 16.6096 12.0769 15.8337C12.2313 15.0578 12.6122 14.3451 13.1716 13.7856C13.731 13.2262 14.4438 12.8453 15.2197 12.6909C15.9956 12.5366 16.7999 12.6158 17.5308 12.9186C18.2617 13.2213 18.8864 13.734 19.3259 14.3918C19.7655 15.0496 20.0001 15.8229 20.0001 16.6141C20.0001 17.6749 19.5786 18.6924 18.8285 19.4425C18.0783 20.1926 17.0609 20.6141 16.0001 20.6141ZM27.0001 16.8841C27.0051 16.7041 27.0051 16.5241 27.0001 16.3441L28.8651 14.0141C28.9628 13.8917 29.0305 13.7481 29.0627 13.5949C29.0948 13.4416 29.0905 13.2829 29.0501 13.1316C28.7438 11.9825 28.2865 10.8791 27.6901 9.85032C27.6119 9.71572 27.5034 9.60122 27.3732 9.51593C27.243 9.43065 27.0947 9.37694 26.9401 9.35907L23.9751 9.02907C23.8517 8.89907 23.7267 8.77407 23.6001 8.65407L23.2501 5.68157C23.2321 5.52684 23.1782 5.37845 23.0926 5.24823C23.0071 5.11802 22.8924 5.00958 22.7576 4.93157C21.7288 4.33563 20.6254 3.87913 19.4763 3.57407C19.325 3.53365 19.1663 3.52933 19.013 3.56146C18.8597 3.59359 18.7161 3.66128 18.5938 3.75907L16.2701 5.61407C16.0901 5.61407 15.9101 5.61407 15.7301 5.61407L13.4001 3.75282C13.2777 3.65503 13.1341 3.58734 12.9808 3.55521C12.8276 3.52308 12.6689 3.5274 12.5176 3.56782C11.3685 3.8741 10.2651 4.33142 9.23631 4.92782C9.1017 5.00598 8.9872 5.11448 8.90192 5.24468C8.81664 5.37489 8.76292 5.5232 8.74506 5.67782L8.41506 8.64782C8.28506 8.77199 8.16006 8.89699 8.04006 9.02282L5.06756 9.36407C4.91282 9.38207 4.76443 9.43598 4.63422 9.52148C4.50401 9.60699 4.39557 9.72174 4.31756 9.85657C3.72174 10.8855 3.26485 11.9889 2.95881 13.1378C2.91855 13.2892 2.91444 13.448 2.94679 13.6013C2.97914 13.7545 3.04705 13.8981 3.14506 14.0203L5.00006 16.3441C5.00006 16.5241 5.00006 16.7041 5.00006 16.8841L3.13881 19.2141C3.04102 19.3364 2.97333 19.48 2.9412 19.6333C2.90906 19.7866 2.91338 19.9453 2.95381 20.0966C3.26009 21.2456 3.71741 22.349 4.31381 23.3778C4.39196 23.5124 4.50046 23.6269 4.63067 23.7122C4.76087 23.7975 4.90919 23.8512 5.06381 23.8691L8.02881 24.1991C8.15297 24.3291 8.27797 24.4541 8.40381 24.5741L8.75006 27.5466C8.76806 27.7013 8.82196 27.8497 8.90747 27.9799C8.99298 28.1101 9.10772 28.2186 9.24256 28.2966C10.2715 28.8924 11.3749 29.3493 12.5238 29.6553C12.6752 29.6956 12.834 29.6997 12.9872 29.6673C13.1405 29.635 13.2841 29.5671 13.4063 29.4691L15.7301 27.6141C15.9101 27.6191 16.0901 27.6191 16.2701 27.6141L18.6001 29.4791C18.7224 29.5769 18.866 29.6445 19.0193 29.6767C19.1726 29.7088 19.3312 29.7045 19.4826 29.6641C20.6318 29.3583 21.7352 28.901 22.7638 28.3041C22.8984 28.2259 23.0129 28.1174 23.0982 27.9872C23.1835 27.857 23.2372 27.7087 23.2551 27.5541L23.5851 24.5891C23.7151 24.4657 23.8401 24.3407 23.9601 24.2141L26.9326 23.8641C27.0873 23.8461 27.2357 23.7922 27.3659 23.7067C27.4961 23.6212 27.6045 23.5064 27.6826 23.3716C28.2784 22.3426 28.7353 21.2393 29.0413 20.0903C29.0816 19.9389 29.0857 19.7802 29.0533 19.6269C29.021 19.4736 28.9531 19.33 28.8551 19.2078L27.0001 16.8841ZM24.9876 16.0716C25.0088 16.4329 25.0088 16.7952 24.9876 17.1566C24.9727 17.404 25.0502 17.6481 25.2051 17.8416L26.9788 20.0578C26.7753 20.7047 26.5147 21.3321 26.2001 21.9328L23.3751 22.2528C23.129 22.2801 22.9019 22.3977 22.7376 22.5828C22.4969 22.8534 22.2407 23.1097 21.9701 23.3503C21.7849 23.5147 21.6674 23.7418 21.6401 23.9878L21.3263 26.8103C20.7257 27.1251 20.0982 27.3857 19.4513 27.5891L17.2338 25.8153C17.0564 25.6735 16.8359 25.5964 16.6088 25.5966H16.5488C16.1875 25.6178 15.8252 25.6178 15.4638 25.5966C15.2165 25.5824 14.9726 25.6598 14.7788 25.8141L12.5563 27.5891C11.9095 27.3855 11.282 27.1249 10.6813 26.8103L10.3613 23.9891C10.334 23.7431 10.2164 23.5159 10.0313 23.3516C9.76069 23.111 9.50442 22.8547 9.26381 22.5841C9.09947 22.399 8.87233 22.2814 8.62631 22.2541L5.80381 21.9391C5.48905 21.3384 5.22843 20.711 5.02506 20.0641L6.79881 17.8466C6.95369 17.6531 7.0312 17.409 7.01631 17.1616C6.99506 16.8002 6.99506 16.4379 7.01631 16.0766C7.0312 15.8292 6.95369 15.5851 6.79881 15.3916L5.02506 13.1703C5.22859 12.5235 5.4892 11.896 5.80381 11.2953L8.62506 10.9753C8.87108 10.948 9.09822 10.8304 9.26256 10.6453C9.50317 10.3747 9.75944 10.1184 10.0301 9.87782C10.2159 9.71338 10.334 9.48571 10.3613 9.23907L10.6751 6.41782C11.2757 6.10306 11.9032 5.84245 12.5501 5.63907L14.7676 7.41282C14.961 7.5677 15.2052 7.64521 15.4526 7.63032C15.8139 7.60907 16.1762 7.60907 16.5376 7.63032C16.7849 7.6445 17.0287 7.56707 17.2226 7.41282L19.4438 5.63907C20.0906 5.8426 20.7181 6.10321 21.3188 6.41782L21.6388 9.23907C21.6661 9.48509 21.7837 9.71224 21.9688 9.87657C22.2394 10.1172 22.4957 10.3735 22.7363 10.6441C22.9006 10.8292 23.1278 10.9468 23.3738 10.9741L26.1963 11.2878C26.5111 11.8884 26.7717 12.5159 26.9751 13.1628L25.2013 15.3803C25.0449 15.5754 24.9673 15.8221 24.9838 16.0716H24.9876Z"
+                          fill="#FFD700"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ms-4">
+                    <h4>Fact Checked</h4>
+                    <p class="mb-0">
+                      Gen AI models and content sample checked by our panel of
+                      clinicians.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-6" data-cue="zoomIn" data-duration="1500">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div>
+                    <div
+                      class="icon-shape icon-lg  bg-opacity-10 border rounded-3"
+                      style="background-color: #2F4F4F; color: white;"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="#FFD700"
+                      >
+                        <path
+                          opacity="0.2"
+                          d="M23.1248 15.989L15.8748 23.239C15.3122 23.8015 14.5491 24.1176 13.7535 24.1176C12.9579 24.1176 12.1949 23.8015 11.6323 23.239L8.87478 20.4777C8.31336 19.9153 7.99805 19.153 7.99805 18.3583C7.99805 17.5636 8.31336 16.8014 8.87478 16.239L16.1248 8.98896C16.6874 8.42639 17.4504 8.11035 18.246 8.11035C19.0416 8.11035 19.8047 8.42639 20.3673 8.98896L23.1248 11.7502C23.6862 12.3127 24.0015 13.0749 24.0015 13.8696C24.0015 14.6643 23.6862 15.4265 23.1248 15.989Z"
+                          fill="#FFD700"
+                        />
+                        <path
+                          d="M29.7076 2.40657C29.6147 2.31359 29.5044 2.23983 29.383 2.18951C29.2616 2.13918 29.1315 2.11328 29.0001 2.11328C28.8687 2.11328 28.7385 2.13918 28.6171 2.18951C28.4957 2.23983 28.3854 2.31359 28.2926 2.40657L21.7426 8.95782L21.0713 8.28532C20.3203 7.5365 19.3031 7.11601 18.2426 7.11601C17.1821 7.11601 16.1648 7.5365 15.4138 8.28532L12.5001 11.2003L11.7076 10.4066C11.5199 10.2189 11.2654 10.1135 11.0001 10.1135C10.7347 10.1135 10.4802 10.2189 10.2926 10.4066C10.1049 10.5942 9.99951 10.8487 9.99951 11.1141C9.99951 11.3794 10.1049 11.6339 10.2926 11.8216L11.0863 12.6141L8.17132 15.5278C7.79979 15.8993 7.50507 16.3403 7.30399 16.8256C7.10292 17.311 6.99942 17.8312 6.99942 18.3566C6.99942 18.8819 7.10292 19.4022 7.30399 19.8875C7.50507 20.3729 7.79979 20.8139 8.17132 21.1853L8.84382 21.8566L2.29257 28.4066C2.19966 28.4995 2.12596 28.6098 2.07567 28.7312C2.02539 28.8526 1.99951 28.9827 1.99951 29.1141C1.99951 29.2455 2.02539 29.3756 2.07567 29.497C2.12596 29.6184 2.19966 29.7287 2.29257 29.8216C2.48021 30.0092 2.7347 30.1146 3.00007 30.1146C3.13146 30.1146 3.26157 30.0887 3.38296 30.0385C3.50436 29.9882 3.61466 29.9145 3.70757 29.8216L10.2576 23.2703L10.9288 23.9428C11.68 24.6913 12.6972 25.1116 13.7576 25.1116C14.818 25.1116 15.8352 24.6913 16.5863 23.9428L19.5001 21.0278L20.2926 21.8216C20.3855 21.9145 20.4958 21.9882 20.6172 22.0385C20.7386 22.0887 20.8687 22.1146 21.0001 22.1146C21.1315 22.1146 21.2616 22.0887 21.383 22.0385C21.5044 21.9882 21.6147 21.9145 21.7076 21.8216C21.8005 21.7287 21.8742 21.6184 21.9245 21.497C21.9747 21.3756 22.0006 21.2455 22.0006 21.1141C22.0006 20.9827 21.9747 20.8526 21.9245 20.7312C21.8742 20.6098 21.8005 20.4995 21.7076 20.4066L20.9138 19.6141L23.8288 16.7003C24.2003 16.3289 24.4951 15.8879 24.6961 15.4025C24.8972 14.9172 25.0007 14.3969 25.0007 13.8716C25.0007 13.3462 24.8972 12.826 24.6961 12.3406C24.4951 11.8553 24.2003 11.4143 23.8288 11.0428L23.1563 10.3716L29.7076 3.82157C29.8005 3.72869 29.8743 3.61841 29.9246 3.49701C29.975 3.37561 30.0009 3.24548 30.0009 3.11407C30.0009 2.98265 29.975 2.85253 29.9246 2.73113C29.8743 2.60973 29.8005 2.49944 29.7076 2.40657ZM15.1713 22.5316C14.7963 22.9064 14.2878 23.1169 13.7576 23.1169C13.2274 23.1169 12.7189 22.9064 12.3438 22.5316L9.58632 19.7703C9.21153 19.3953 9.00099 18.8868 9.00099 18.3566C9.00099 17.8264 9.21153 17.3179 9.58632 16.9428L12.5001 14.0278L18.0863 19.6141L15.1713 22.5316ZM22.4138 15.2891L19.5001 18.2003L13.9138 12.6141L16.8288 9.70032C17.2039 9.32553 17.7124 9.115 18.2426 9.115C18.7728 9.115 19.2813 9.32553 19.6563 9.70032L22.4138 12.4503C22.5996 12.636 22.7469 12.8565 22.8475 13.0992C22.948 13.3419 22.9998 13.602 22.9998 13.8647C22.9998 14.1274 22.948 14.3875 22.8475 14.6302C22.7469 14.8728 22.5996 15.0933 22.4138 15.2791V15.2891ZM11.0513 4.43032C10.9674 4.17869 10.987 3.90406 11.1056 3.66682C11.2242 3.42959 11.4322 3.24919 11.6838 3.16532C11.9354 3.08144 12.2101 3.10096 12.4473 3.21958C12.6845 3.33819 12.8649 3.54619 12.9488 3.79782L13.9488 6.79782C13.9903 6.92241 14.0069 7.05396 13.9976 7.18496C13.9883 7.31596 13.9533 7.44385 13.8946 7.56131C13.8358 7.67878 13.7545 7.78353 13.6553 7.86958C13.5561 7.95562 13.4409 8.02129 13.3163 8.06282C13.0647 8.14669 12.7901 8.12717 12.5528 8.00856C12.4354 7.94983 12.3306 7.86853 12.2446 7.76932C12.1585 7.6701 12.0928 7.55491 12.0513 7.43032L11.0513 4.43032ZM3.05132 11.7978C3.09284 11.6732 3.1585 11.558 3.24455 11.4588C3.33059 11.3596 3.43534 11.2783 3.55281 11.2196C3.67028 11.1608 3.79817 11.1258 3.92917 11.1165C4.06017 11.1072 4.19173 11.1238 4.31632 11.1653L7.31632 12.1653C7.44091 12.2068 7.5561 12.2725 7.65532 12.3586C7.75453 12.4446 7.83582 12.5494 7.89456 12.6668C7.95329 12.7843 7.98831 12.9122 7.99762 13.0432C8.00693 13.1742 7.99035 13.3057 7.94882 13.4303C7.90729 13.5549 7.84162 13.6701 7.75557 13.7693C7.66953 13.8685 7.56478 13.9498 7.44731 14.0086C7.32985 14.0673 7.20196 14.1023 7.07096 14.1116C6.93996 14.1209 6.80841 14.1043 6.68382 14.0628L3.68382 13.0628C3.55922 13.0213 3.44402 12.9556 3.3448 12.8696C3.24558 12.7835 3.16429 12.6788 3.10555 12.5613C3.04682 12.4439 3.0118 12.316 3.00249 12.185C2.99319 12.054 3.00978 11.9224 3.05132 11.7978ZM28.9488 20.4303C28.9073 20.5549 28.8416 20.6701 28.7556 20.7693C28.6695 20.8686 28.5648 20.9498 28.4473 21.0086C28.3299 21.0673 28.202 21.1023 28.071 21.1116C27.94 21.1209 27.8084 21.1044 27.6838 21.0628L24.6838 20.0628C24.4322 19.9789 24.2242 19.7985 24.1056 19.5613C23.987 19.3241 23.9674 19.0494 24.0513 18.7978C24.1352 18.5462 24.3156 18.3382 24.5528 18.2196C24.7901 18.101 25.0647 18.0814 25.3163 18.1653L28.3163 19.1653C28.4409 19.2068 28.5561 19.2725 28.6553 19.3585C28.7546 19.4446 28.8358 19.5493 28.8946 19.6668C28.9533 19.7843 28.9883 19.9122 28.9976 20.0432C29.007 20.1742 28.9904 20.3057 28.9488 20.4303ZM20.9488 27.7978C21.0327 28.0494 21.0132 28.3241 20.8946 28.5613C20.7759 28.7985 20.5679 28.9789 20.3163 29.0628C20.0647 29.1467 19.7901 29.1272 19.5528 29.0086C19.3156 28.8899 19.1352 28.6819 19.0513 28.4303L18.0513 25.4303C17.9674 25.1787 17.987 24.9041 18.1056 24.6668C18.2242 24.4296 18.4322 24.2492 18.6838 24.1653C18.9354 24.0814 19.2101 24.101 19.4473 24.2196C19.6845 24.3382 19.8649 24.5462 19.9488 24.7978L20.9488 27.7978Z"
+                          fill="#FFD700"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ms-4">
+                    <h4>Plug & Play</h4>
+                    <p class="mb-0">Custom train your AI model in few clicks</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-6" data-cue="zoomIn" data-duration="1500">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div>
+                    <div
+                      class="icon-shape icon-lg bg-opacity-10 border rounded-3"
+                      style="background-color: #2F4F4F; color: white;"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="#FFD700"
+                      >
+                        <path
+                          opacity="0.2"
+                          d="M14 21.114C14 21.9051 13.7654 22.6785 13.3259 23.3363C12.8864 23.9941 12.2616 24.5068 11.5307 24.8095C10.7998 25.1123 9.99556 25.1915 9.21964 25.0372C8.44372 24.8828 7.73098 24.5019 7.17157 23.9424C6.61216 23.383 6.2312 22.6703 6.07686 21.8944C5.92252 21.1185 6.00173 20.3142 6.30448 19.5833C6.60723 18.8524 7.11992 18.2277 7.77772 17.7881C8.43552 17.3486 9.20888 17.114 10 17.114C11.0609 17.114 12.0783 17.5354 12.8284 18.2856C13.5786 19.0357 14 20.0531 14 21.114ZM10 4.11402C9.20888 4.11402 8.43552 4.34861 7.77772 4.78814C7.11992 5.22766 6.60723 5.85238 6.30448 6.58328C6.00173 7.31419 5.92252 8.11845 6.07686 8.89438C6.2312 9.6703 6.61216 10.383 7.17157 10.9424C7.73098 11.5019 8.44372 11.8828 9.21964 12.0372C9.99556 12.1915 10.7998 12.1123 11.5307 11.8095C12.2616 11.5068 12.8864 10.9941 13.3259 10.3363C13.7654 9.6785 14 8.90514 14 8.11402C14 7.05315 13.5786 6.03573 12.8284 5.28559C12.0783 4.53544 11.0609 4.11402 10 4.11402ZM22 17.114C21.2089 17.114 20.4355 17.3486 19.7777 17.7881C19.1199 18.2277 18.6072 18.8524 18.3045 19.5833C18.0017 20.3142 17.9225 21.1185 18.0769 21.8944C18.2312 22.6703 18.6122 23.383 19.1716 23.9424C19.731 24.5019 20.4437 24.8828 21.2196 25.0372C21.9956 25.1915 22.7998 25.1123 23.5307 24.8095C24.2616 24.5068 24.8864 23.9941 25.3259 23.3363C25.7654 22.6785 26 21.9051 26 21.114C26 20.0531 25.5786 19.0357 24.8284 18.2856C24.0783 17.5354 23.0609 17.114 22 17.114ZM22 12.114C22.7911 12.114 23.5645 11.8794 24.2223 11.4399C24.8801 11.0004 25.3928 10.3757 25.6955 9.64475C25.9983 8.91385 26.0775 8.10958 25.9231 7.33365C25.7688 6.55773 25.3878 5.845 24.8284 5.28559C24.269 4.72618 23.5563 4.34522 22.7804 4.19087C22.0044 4.03653 21.2002 4.11575 20.4693 4.4185C19.7384 4.72125 19.1136 5.23394 18.6741 5.89173C18.2346 6.54953 18 7.32289 18 8.11402C18 9.17488 18.4214 10.1923 19.1716 10.9424C19.9217 11.6926 20.9391 12.114 22 12.114Z"
+                          fill="#FFD700"
+                        />
+                        <path
+                          d="M3.4 15.9141C3.50506 15.9929 3.62461 16.0502 3.75182 16.0828C3.87903 16.1154 4.01142 16.1226 4.14142 16.1041C4.27142 16.0855 4.39649 16.0415 4.50949 15.9746C4.62249 15.9077 4.72121 15.8192 4.8 15.7141C5.40546 14.9068 6.19055 14.2516 7.09311 13.8003C7.99567 13.3491 8.99091 13.1141 10 13.1141C11.0091 13.1141 12.0043 13.3491 12.9069 13.8003C13.8094 14.2516 14.5945 14.9068 15.2 15.7141C15.3593 15.9261 15.5963 16.0661 15.8588 16.1034C16.1214 16.1407 16.388 16.0721 16.6 15.9129C16.6756 15.8567 16.7425 15.7897 16.7987 15.7141C17.4042 14.9068 18.1893 14.2516 19.0919 13.8003C19.9944 13.3491 20.9897 13.1141 21.9988 13.1141C23.0078 13.1141 24.0031 13.3491 24.9056 13.8003C25.8082 14.2516 26.5933 14.9068 27.1987 15.7141C27.358 15.9263 27.5951 16.0665 27.8578 16.1039C28.1204 16.1413 28.3872 16.0728 28.5994 15.9135C28.8115 15.7542 28.9518 15.5171 28.9891 15.2545C29.0265 14.9918 28.958 14.725 28.7987 14.5129C27.9136 13.3262 26.7332 12.3919 25.375 11.8029C26.1196 11.123 26.6413 10.234 26.8716 9.25237C27.1019 8.27075 27.03 7.24244 26.6654 6.30239C26.3009 5.36235 25.6606 4.55449 24.8287 3.98483C23.9967 3.41518 23.012 3.11035 22.0037 3.11035C20.9955 3.11035 20.0108 3.41518 19.1788 3.98483C18.3469 4.55449 17.7066 5.36235 17.3421 6.30239C16.9775 7.24244 16.9056 8.27075 17.1359 9.25237C17.3662 10.234 17.8879 11.123 18.6325 11.8029C17.6518 12.2269 16.7609 12.834 16.0075 13.5916C15.2541 12.834 14.3632 12.2269 13.3825 11.8029C14.1271 11.123 14.6488 10.234 14.8791 9.25237C15.1094 8.27075 15.0375 7.24244 14.6729 6.30239C14.3084 5.36235 13.6681 4.55449 12.8362 3.98483C12.0042 3.41518 11.0195 3.11035 10.0112 3.11035C9.00298 3.11035 8.01827 3.41518 7.18634 3.98483C6.35442 4.55449 5.71415 5.36235 5.34957 6.30239C4.98499 7.24244 4.91313 8.27075 5.14342 9.25237C5.37371 10.234 5.89539 11.123 6.64 11.8029C5.27581 12.39 4.08963 13.3249 3.2 14.5141C3.12121 14.6192 3.06388 14.7387 3.03129 14.8659C2.99869 14.9931 2.99148 15.1255 3.01005 15.2555C3.02862 15.3855 3.07262 15.5106 3.13953 15.6236C3.20643 15.7366 3.29494 15.8353 3.4 15.9141ZM22 5.11412C22.5933 5.11412 23.1734 5.29006 23.6667 5.61971C24.1601 5.94935 24.5446 6.41789 24.7716 6.96607C24.9987 7.51425 25.0581 8.11745 24.9424 8.69939C24.8266 9.28133 24.5409 9.81588 24.1213 10.2354C23.7018 10.655 23.1672 10.9407 22.5853 11.0565C22.0033 11.1722 21.4001 11.1128 20.8519 10.8858C20.3038 10.6587 19.8352 10.2742 19.5056 9.78083C19.1759 9.28748 19 8.70746 19 8.11412C19 7.31847 19.3161 6.55541 19.8787 5.9928C20.4413 5.43019 21.2044 5.11412 22 5.11412ZM10 5.11412C10.5933 5.11412 11.1734 5.29006 11.6667 5.61971C12.1601 5.94935 12.5446 6.41789 12.7716 6.96607C12.9987 7.51425 13.0581 8.11745 12.9424 8.69939C12.8266 9.28133 12.5409 9.81588 12.1213 10.2354C11.7018 10.655 11.1672 10.9407 10.5853 11.0565C10.0033 11.1722 9.40013 11.1128 8.85195 10.8858C8.30377 10.6587 7.83524 10.2742 7.50559 9.78083C7.17595 9.28748 7 8.70746 7 8.11412C7 7.31847 7.31607 6.55541 7.87868 5.9928C8.44129 5.43019 9.20435 5.11412 10 5.11412ZM25.375 24.8029C26.1196 24.123 26.6413 23.234 26.8716 22.2524C27.1019 21.2707 27.03 20.2424 26.6654 19.3024C26.3009 18.3623 25.6606 17.5545 24.8287 16.9848C23.9967 16.4152 23.012 16.1104 22.0037 16.1104C20.9955 16.1104 20.0108 16.4152 19.1788 16.9848C18.3469 17.5545 17.7066 18.3623 17.3421 19.3024C16.9775 20.2424 16.9056 21.2707 17.1359 22.2524C17.3662 23.234 17.8879 24.123 18.6325 24.8029C17.6518 25.2269 16.7609 25.834 16.0075 26.5916C15.2541 25.834 14.3632 25.2269 13.3825 24.8029C14.1271 24.123 14.6488 23.234 14.8791 22.2524C15.1094 21.2707 15.0375 20.2424 14.6729 19.3024C14.3084 18.3623 13.6681 17.5545 12.8362 16.9848C12.0042 16.4152 11.0195 16.1104 10.0112 16.1104C9.00298 16.1104 8.01827 16.4152 7.18634 16.9848C6.35442 17.5545 5.71415 18.3623 5.34957 19.3024C4.98499 20.2424 4.91313 21.2707 5.14342 22.2524C5.37371 23.234 5.89539 24.123 6.64 24.8029C5.27581 25.39 4.08963 26.3249 3.2 27.5141C3.12121 27.6192 3.06388 27.7387 3.03129 27.8659C2.99869 27.9931 2.99148 28.1255 3.01005 28.2555C3.02862 28.3855 3.07262 28.5106 3.13953 28.6236C3.20643 28.7366 3.29494 28.8353 3.4 28.9141C3.50506 28.9929 3.62461 29.0502 3.75182 29.0828C3.87903 29.1154 4.01142 29.1226 4.14142 29.1041C4.27142 29.0855 4.39649 29.0415 4.50949 28.9746C4.62249 28.9077 4.72121 28.8192 4.8 28.7141C5.40546 27.9068 6.19055 27.2516 7.09311 26.8003C7.99567 26.3491 8.99091 26.1141 10 26.1141C11.0091 26.1141 12.0043 26.3491 12.9069 26.8003C13.8094 27.2516 14.5945 27.9068 15.2 28.7141C15.3593 28.9261 15.5963 29.0661 15.8588 29.1034C16.1214 29.1407 16.388 29.0721 16.6 28.9129C16.6756 28.8567 16.7425 28.7897 16.7987 28.7141C17.4042 27.9068 18.1893 27.2516 19.0919 26.8003C19.9944 26.3491 20.9897 26.1141 21.9988 26.1141C23.0078 26.1141 24.0031 26.3491 24.9056 26.8003C25.8082 27.2516 26.5933 27.9068 27.1987 28.7141C27.358 28.9263 27.5951 29.0665 27.8578 29.1039C28.1204 29.1413 28.3872 29.0728 28.5994 28.9135C28.8115 28.7542 28.9518 28.5171 28.9891 28.2545C29.0265 27.9918 28.958 27.725 28.7987 27.5129C27.9136 26.3262 26.7332 25.3919 25.375 24.8029ZM10 18.1141C10.5933 18.1141 11.1734 18.2901 11.6667 18.6197C12.1601 18.9494 12.5446 19.4179 12.7716 19.9661C12.9987 20.5142 13.0581 21.1174 12.9424 21.6994C12.8266 22.2813 12.5409 22.8159 12.1213 23.2354C11.7018 23.655 11.1672 23.9407 10.5853 24.0565C10.0033 24.1722 9.40013 24.1128 8.85195 23.8858C8.30377 23.6587 7.83524 23.2742 7.50559 22.7808C7.17595 22.2875 7 21.7075 7 21.1141C7 20.3185 7.31607 19.5554 7.87868 18.9928C8.44129 18.4302 9.20435 18.1141 10 18.1141ZM22 18.1141C22.5933 18.1141 23.1734 18.2901 23.6667 18.6197C24.1601 18.9494 24.5446 19.4179 24.7716 19.9661C24.9987 20.5142 25.0581 21.1174 24.9424 21.6994C24.8266 22.2813 24.5409 22.8159 24.1213 23.2354C23.7018 23.655 23.1672 23.9407 22.5853 24.0565C22.0033 24.1722 21.4001 24.1128 20.8519 23.8858C20.3038 23.6587 19.8352 23.2742 19.5056 22.7808C19.1759 22.2875 19 21.7075 19 21.1141C19 20.3185 19.3161 19.5554 19.8787 18.9928C20.4413 18.4302 21.2044 18.1141 22 18.1141Z"
+                          fill="#FFD700"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ms-4">
+                    <h4>Security at Each Step</h4>
+                    <p class="mb-0">
+                      Standardised and tested against security standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--More focus end-->
+
+      <!--Join Community start-->
+      <section class="container py-lg-8 py-5" data-cue="fadeIn">
+        <div class="row justify-content-center mb-8">
+          <div class="col-xl-6 col-lg-10 col-12">
+            <div class="text-center d-flex flex-column gap-4">
+              <div class="d-flex justify-content-center">
+                <span
+                  class="bg-opacity-10 border px-3 py-2 fs-6 rounded-pill lh-1 align-items-center d-flex"
+                   style="background-color: #3F8A57; color: white;"
+                >
+                  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="17"
+  viewBox="0 0 16 17"
+  fill="#FFFFFF"
+>
+  <path
+    d="M15 14.6143C15 14.6143 16 14.6143 16 13.6143C16 12.6143 15 9.61426 11 9.61426C7 9.61426 6 12.6143 6 13.6143C6 14.6143 7 14.6143 7 14.6143H15ZM7.022 13.6143C7.01461 13.6132 7.00727 13.6119 7 13.6103C7.001 13.3463 7.167 12.5803 7.76 11.8903C8.312 11.2433 9.282 10.6143 11 10.6143C12.717 10.6143 13.687 11.2443 14.24 11.8903C14.833 12.5803 14.998 13.3473 15 13.6103L14.992 13.6123C14.9874 13.613 14.9827 13.6137 14.978 13.6143H7.022ZM11 7.61426C11.5304 7.61426 12.0391 7.40354 12.4142 7.02847C12.7893 6.6534 13 6.14469 13 5.61426C13 5.08382 12.7893 4.57512 12.4142 4.20004C12.0391 3.82497 11.5304 3.61426 11 3.61426C10.4696 3.61426 9.96086 3.82497 9.58579 4.20004C9.21071 4.57512 9 5.08382 9 5.61426C9 6.14469 9.21071 6.6534 9.58579 7.02847C9.96086 7.40354 10.4696 7.61426 11 7.61426ZM14 5.61426C14 6.00822 13.9224 6.39833 13.7716 6.76231C13.6209 7.12629 13.3999 7.457 13.1213 7.73558C12.8427 8.01415 12.512 8.23513 12.1481 8.3859C11.7841 8.53666 11.394 8.61426 11 8.61426C10.606 8.61426 10.2159 8.53666 9.85195 8.3859C9.48797 8.23513 9.15726 8.01415 8.87868 7.73558C8.6001 7.457 8.37913 7.12629 8.22836 6.76231C8.0776 6.39833 8 6.00822 8 5.61426C8 4.81861 8.31607 4.05555 8.87868 3.49294C9.44129 2.93033 10.2044 2.61426 11 2.61426C11.7956 2.61426 12.5587 2.93033 13.1213 3.49294C13.6839 4.05555 14 4.81861 14 5.61426ZM6.936 9.89426C6.53598 9.7683 6.12364 9.68549 5.706 9.64726C5.47133 9.62494 5.23573 9.61393 5 9.61426C1 9.61426 0 12.6143 0 13.6143C0 14.2813 0.333 14.6143 1 14.6143H5.216C5.06776 14.3021 4.99382 13.9598 5 13.6143C5 12.6043 5.377 11.5723 6.09 10.7103C6.333 10.4163 6.616 10.1413 6.936 9.89426ZM4.92 10.6143C4.32815 11.5035 4.00844 12.5461 4 13.6143H1C1 13.3543 1.164 12.5843 1.76 11.8903C2.305 11.2543 3.252 10.6343 4.92 10.6153V10.6143ZM1.5 6.11426C1.5 5.31861 1.81607 4.55555 2.37868 3.99294C2.94129 3.43033 3.70435 3.11426 4.5 3.11426C5.29565 3.11426 6.05871 3.43033 6.62132 3.99294C7.18393 4.55555 7.5 5.31861 7.5 6.11426C7.5 6.90991 7.18393 7.67297 6.62132 8.23558C6.05871 8.79819 5.29565 9.11426 4.5 9.11426C3.70435 9.11426 2.94129 8.79819 2.37868 8.23558C1.81607 7.67297 1.5 6.90991 1.5 6.11426ZM4.5 4.11426C3.96957 4.11426 3.46086 4.32497 3.08579 4.70004C2.71071 5.07512 2.5 5.58382 2.5 6.11426C2.5 6.64469 2.71071 7.1534 3.08579 7.52847C3.46086 7.90354 3.96957 8.11426 4.5 8.11426C5.03043 8.11426 5.53914 7.90354 5.91421 7.52847C6.28929 7.1534 6.5 6.64469 6.5 6.11426C6.5 5.58382 6.28929 5.07512 5.91421 4.70004C5.53914 4.32497 5.03043 4.11426 4.5 4.11426Z"
+    fill="#FFFFFF"
+  />
+</svg>
+
+                  <span class="ms-1 text-uppercase ls-md fw-semibold"
+                    >Testimonials</span
+                  >
+                </span>
+              </div>
+              <div class="d-flex flex-column gap-3 mx-lg-8">
+                <h1 class="mb-0">What our users say</h1>
+                <p class="mb-0">
+                  Don’t just take it from us. Here’s what some of our happy
+                  customers are saying.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row gy-4 gy-md-6">
+          <div
+            class="col-lg-4 col-md-6 col-12 flex-column d-flex gap-4 gap-md-6 mt-lg-8"
+            data-cue="slideInLeft"
+          >
+            <div class="card bg-light card-lift">
+              <div class="card-body text-body">
+                <p class="mb-0">
+                  “liquam pretium justo dui, eget fringilla nisl aliquet id.
+                  Vestibulum posuere orci vitae ante suscipit, in auctor elit
+                  pulvinar.”
+                </p>
+                <div class="mt-4 d-flex align-items-center">
+                  <img
+                    src="./assets/images/avatar/avatar-1.jpg"
+                    alt=""
+                    class="avatar avatar-lg rounded-circle border p-1 bg-white"
+                  />
+                  <div class="ms-3 lh-1">
+                    <h5 class="mb-0">Daniel Leon</h5>
+                    <small>Time Management Consultant</small>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="stretched-link"></a>
+            </div>
+            <div class="card bg-light card-lift">
+              <div class="card-body text-body">
+                <p class="mb-0">
+                  “Quisque tristique volutpat urna in sagittis. Praesent
+                  elementum purus et enim vulputate vestibulum.”
+                </p>
+                <div class="mt-4 d-flex align-items-center">
+                  <img
+                    src="./assets/images/avatar/avatar-2.jpg"
+                    alt=""
+                    class="avatar avatar-lg rounded-circle border p-1 bg-white"
+                  />
+                  <div class="ms-3 lh-1">
+                    <h5 class="mb-0">Hector Pratt</h5>
+                    <small>Fitness Trainer</small>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-12 flex-column d-flex gap-4 gap-md-6"
+            data-cue="zoomIn"
+          >
+            <div class="card bg-light card-lift">
+              <div class="card-body text-body">
+                <p class="mb-0">
+                  “Morbi fermentum nisl dolor, vel tincidunt turpis consequat
+                  at. Morbi vitae sollicitudin quam. Praesent ullamcorper porta
+                  sagittis.
+                </p>
+                <div class="mt-4 d-flex align-items-center">
+                  <img
+                    src="./assets/images/avatar/avatar-4.jpg"
+                    alt=""
+                    class="avatar avatar-lg rounded-circle border p-1 bg-white"
+                  />
+                  <div class="ms-3 lh-1">
+                    <h5 class="mb-0">Adrian Lopez</h5>
+                    <small>Travel Advisor</small>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="stretched-link"></a>
+            </div>
+            <div class="card bg-light card-lift">
+              <div class="card-body text-body">
+                <p class="mb-0">
+                  “Nulla id mauris id nisi venenatis fringilla et eget est ullam
+                  malesuada dolor at est molestie mattis. Mauris finibus
+                  molestie est vitae aliquet.”
+                </p>
+                <div class="mt-4 d-flex align-items-center">
+                  <img
+                    src="./assets/images/avatar/avatar-3.jpg"
+                    alt=""
+                    class="avatar avatar-lg rounded-circle border p-1 bg-white"
+                  />
+                  <div class="ms-3 lh-1">
+                    <h5 class="mb-0">Erica Nixon</h5>
+                    <small>Event Planner</small>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-12 col-12 flex-column flex-md-row flex-lg-column d-flex gap-4 gap-md-6 mt-lg-8"
+            data-cue="slideInRight"
+          >
+            <div class="card bg-light card-lift">
+              <div class="card-body text-body">
+                <p class="mb-0">
+                  “Sed nunc felis, tempor in consectetur ut, consequat quis
+                  velit. Mauris at dictum est. Donec quam quam.”
+                </p>
+                <div class="mt-4 d-flex align-items-center">
+                  <img
+                    src="./assets/images/avatar/avatar-6.jpg"
+                    alt=""
+                    class="avatar avatar-lg rounded-circle border p-1 bg-white"
+                  />
+                  <div class="ms-3 lh-1">
+                    <h5 class="mb-0">Virginia Santiago</h5>
+                    <small>Career Counselor</small>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="stretched-link"></a>
+            </div>
+            <div class="card bg-light card-lift">
+              <div class="card-body text-body">
+                <p class="mb-0">
+                  “Phasellus luctus fermentum vehicula. Pellentesque imperdiet,
+                  est vitae lacinia consequat, lorem nulla pulvinar nulla, eget
+                  varius tellus velit quis metus.”
+                </p>
+                <div class="mt-4 d-flex align-items-center">
+                  <img
+                    src="./assets/images/avatar/avatar-5.jpg"
+                    alt=""
+                    class="avatar avatar-lg rounded-circle border p-1 bg-white"
+                  />
+                  <div class="ms-3 lh-1">
+                    <h5 class="mb-0">Amin Matthams</h5>
+                    <small>Cybersecurity Expert</small>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+          <div class="col-12 text-center" data-cue="zoomIn">
+            <a href="#" class="btn"  style="background-color: #3F8A57; color: white;">Sign up Now</a>
+            <a href="#" class="btn ms-2"  style="border-color: #3F8A57; color:#3F8A57;">Book a demo</a>
+          </div>
+        </div>
+      </section>
+      <!--Join Community end-->
+
+      <!--Plan to unlock start-->
+      <section class="container py-lg-8 py-5 price-wrapper" data-cue="fadeIn">
+        <div class="row justify-content-center mb-8">
+          <div class="col-xl-6 col-lg-10 col-12">
+            <div class="text-center d-flex flex-column gap-5">
+              <div class="d-flex justify-content-center">
+                <span
+                  class=" bg-opacity-10 border px-3 py-2 fs-6 rounded-pill lh-1 align-items-center d-flex"
+                  style="background-color: #3F8A57; color: white;"
+                >
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="#FFFFFF"
+              >
+                <g clip-path="url(#clip0_1717_21198)">
+                  <path
+                    d="M6 10.1253C6.076 11.0793 6.83 11.8223 8.182 11.9103V12.6143H8.782V11.9053C10.182 11.8073 11 11.0593 11 9.97326C11 8.98626 10.374 8.47726 9.255 8.21326L8.782 8.10126V6.18426C9.382 6.25226 9.764 6.58026 9.856 7.03426H10.908C10.832 6.11526 10.044 5.39626 8.782 5.31826V4.61426H8.182V5.33326C6.987 5.45026 6.172 6.16926 6.172 7.18626C6.172 8.08626 6.778 8.65826 7.785 8.89326L8.182 8.99126V11.0253C7.567 10.9323 7.16 10.5953 7.068 10.1253H6ZM8.177 7.95926C7.587 7.82226 7.267 7.54326 7.267 7.12326C7.267 6.65326 7.612 6.30126 8.182 6.19826V7.95826L8.177 7.95926ZM8.869 9.15226C9.586 9.31826 9.917 9.58726 9.917 10.0623C9.917 10.6043 9.505 10.9763 8.782 11.0443V9.13226L8.869 9.15226Z"
+                    fill="#FFFFFF"
+                  />
+                  <path
+                    d="M8.5 15.6143C6.64348 15.6143 4.86301 14.8768 3.55025 13.564C2.2375 12.2513 1.5 10.4708 1.5 8.61426C1.5 6.75774 2.2375 4.97726 3.55025 3.66451C4.86301 2.35176 6.64348 1.61426 8.5 1.61426C10.3565 1.61426 12.137 2.35176 13.4497 3.66451C14.7625 4.97726 15.5 6.75774 15.5 8.61426C15.5 10.4708 14.7625 12.2513 13.4497 13.564C12.137 14.8768 10.3565 15.6143 8.5 15.6143ZM8.5 16.6143C10.6217 16.6143 12.6566 15.7714 14.1569 14.2711C15.6571 12.7708 16.5 10.736 16.5 8.61426C16.5 6.49253 15.6571 4.45769 14.1569 2.9574C12.6566 1.45711 10.6217 0.614258 8.5 0.614258C6.37827 0.614258 4.34344 1.45711 2.84315 2.9574C1.34285 4.45769 0.5 6.49253 0.5 8.61426C0.5 10.736 1.34285 12.7708 2.84315 14.2711C4.34344 15.7714 6.37827 16.6143 8.5 16.6143Z"
+                    fill="#FFFFFF"
+                  />
+                  <path
+                    d="M8.5 14.1143C7.04131 14.1143 5.64236 13.5348 4.61091 12.5033C3.57946 11.4719 3 10.0729 3 8.61426C3 7.15557 3.57946 5.75662 4.61091 4.72517C5.64236 3.69372 7.04131 3.11426 8.5 3.11426C9.95869 3.11426 11.3576 3.69372 12.3891 4.72517C13.4205 5.75662 14 7.15557 14 8.61426C14 10.0729 13.4205 11.4719 12.3891 12.5033C11.3576 13.5348 9.95869 14.1143 8.5 14.1143ZM8.5 14.6143C9.28793 14.6143 10.0681 14.4591 10.7961 14.1575C11.5241 13.856 12.1855 13.4141 12.7426 12.8569C13.2998 12.2997 13.7417 11.6383 14.0433 10.9104C14.3448 10.1824 14.5 9.40219 14.5 8.61426C14.5 7.82633 14.3448 7.04611 14.0433 6.31816C13.7417 5.5902 13.2998 4.92877 12.7426 4.37162C12.1855 3.81447 11.5241 3.37251 10.7961 3.07098C10.0681 2.76945 9.28793 2.61426 8.5 2.61426C6.9087 2.61426 5.38258 3.2464 4.25736 4.37162C3.13214 5.49684 2.5 7.02296 2.5 8.61426C2.5 10.2056 3.13214 11.7317 4.25736 12.8569C5.38258 13.9821 6.9087 14.6143 8.5 14.6143Z"
+                    fill="#FFFFFF"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1717_21198">
+                    <rect
+                      width="16"
+                      height="16"
+                      fill="none"
+                      transform="translate(0.5 0.614258)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              
+                  <span class="ms-1 text-uppercase ls-md fw-semibold"
+                    >Pricing</span
+                  >
+                </span>
+              </div>
+              <div class="d-flex flex-column gap-3 mx-lg-8">
+                <h1 class="mb-0">A Plan for All Needs</h1>
+                <p class="mb-0">
+                  Choose a package that suits your requirement across languages,
+                  locations and amount of content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+              <div class="card pricing">
+                <div class="card-body">
+                  <div class="mb-6">
+                    <h3>Basic</h3>
+                    <p class="mb-0">AI Generated Assets for Healthcare companies</p>
+                  </div>
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">1 Location</span>
+                    </li>
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">1 Language</span>
+                    </li>
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">1 Channel</span>
+                    </li>
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">NA</span>
+                    </li>
+                  </ul>
+                  <div class="d-grid mt-6">
+                    <a href="#" class="btn btn-secondary">180-360 Tokens/Year</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+              <div class="card pricing">
+                <div class="card-body">
+                  <div class="mb-6">
+                    <h3>Pro</h3>
+                    <p class="mb-0">AI Agents for Multi-Channel <br/>personalization</p>
+                  </div>
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">Up to 3 Locations</span>
+                    </li>
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">Up to 3 Languages</span>
+                    </li>
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">Up to 3 Channels</span>
+                    </li>
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">Up to 3 AI re-writes</span>
+                    </li>
+                  </ul>
+                  <div class="d-grid mt-6">
+                    <a href="#" class="btn"  style="background-color: #3F8A57; color: white;">1500-3000 Tokens/Year</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+              <div class="card pricing">
+                <div class="card-body">
+                  <div class="mb-6">
+                    <h3>Advanced</h3>
+                    <p class="mb-0">Copilot AI Bot for dedicated <br/>assets generation</p>
+                  </div>
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">Up to 5 Locations</span>
+                    </li>
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">Up to 5 Languages</span>
+                    </li>
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">Up to 5 Channels</span>
+                    </li>
+                    <li class="mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </svg>
+                      <span class="ms-3">Up to 3 AI re-writes</span>
+                    </li>
+                  </ul>
+                  <div class="d-grid mt-6">
+                    <a href="#" class="btn" style="background-color:  #C62828; color: white;">5000-9000 Tokens/Year</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!--Plan to unlock end-->
+
+      <!--Call to action start-->
+      <section class="container mb-lg-8 py-lg-8 py-5" data-cue="zoomIn">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="bg-gray-900 rounded-3">
+              <div class="row align-items-center">
+                <div class="offset-xl-1 col-xl-4 col-lg-12">
+                  <div class="d-flex flex-column gap-4 p-6 p-xl-0">
+                    <div>
+                      <h2 class="text-white-stable">
+                        Take the healthcare and medical information and impact a
+                        billion lives
+                      </h2>
+                      <p class="mb-0 me-lg-8">
+                        Sign up for a free trial and experience the power of Gen
+                        AI in healthcare.
+                      </p>
+                    </div>
+                    <div>
+                      <a href="#" class="btn" style="background-color: #3F8A57; color: white;">Get Started</a>
+                    </div>
+                    <div>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="17"
+                              viewBox="0 0 16 17"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_1710_19624)">
+                                <path
+                                  d="M16 8.61426C16 10.736 15.1571 12.7708 13.6569 14.2711C12.1566 15.7714 10.1217 16.6143 8 16.6143C5.87827 16.6143 3.84344 15.7714 2.34315 14.2711C0.842855 12.7708 0 10.736 0 8.61426C0 6.49253 0.842855 4.45769 2.34315 2.9574C3.84344 1.45711 5.87827 0.614258 8 0.614258C10.1217 0.614258 12.1566 1.45711 13.6569 2.9574C15.1571 4.45769 16 6.49253 16 8.61426ZM12.03 5.58426C11.9586 5.51308 11.8735 5.45703 11.7799 5.41947C11.6863 5.38192 11.5861 5.36362 11.4853 5.36567C11.3845 5.36772 11.2851 5.39009 11.1932 5.43143C11.1012 5.47276 11.0185 5.53223 10.95 5.60626L7.477 10.0313L5.384 7.93726C5.24183 7.80478 5.05378 7.73266 4.85948 7.73608C4.66518 7.73951 4.47979 7.81822 4.34238 7.95564C4.20497 8.09305 4.12625 8.27843 4.12283 8.47274C4.1194 8.66704 4.19152 8.85508 4.324 8.99726L6.97 11.6443C7.04128 11.7154 7.12616 11.7715 7.21958 11.8091C7.313 11.8467 7.41305 11.8652 7.51375 11.8633C7.61444 11.8614 7.71374 11.8393 7.8057 11.7982C7.89766 11.7572 7.9804 11.698 8.049 11.6243L12.041 6.63426C12.1771 6.49276 12.2523 6.30353 12.2504 6.10722C12.2485 5.9109 12.1698 5.72314 12.031 5.58426H12.03Z"
+                                  fill="#F1F5F9"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1710_19624">
+                                  <rect
+                                    width="16"
+                                    height="16"
+                                    fill="white"
+                                    transform="translate(0 0.614258)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                          <span class="ms-1">3 Free Assets</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-xl-1 col-xl-5 col-lg-12">
+                  <div class="pt-xl-8 d-none d-xl-block">
+                    <img
+                      src="./assets/images/landings/sass-v3/cta-img.svg"
+                      class="img-fluid w-xxl-100"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Call to action end-->
+    </main>
+    @@include("partials/footer.html") @@include("partials/btn-scroll-top.html")
+    @@include("partials/scripts.html")
+    <script src="@@webRoot/node_modules/parallax-js/dist/parallax.min.js"></script>
+    <script src="@@webRoot/assets/js/vendors/parallax.js"></script>
+    <script src="@@webRoot/node_modules/rellax/rellax.min.js"></script>
+    <script src="@@webRoot/assets/js/vendors/rellax.js"></script>
+    <!-- Swiper JS -->
+    <script src="@@webRoot/node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="@@webRoot/assets/js/vendors/swiper.js"></script>
+    <script src="@@webRoot/node_modules/scrollcue/scrollCue.min.js"></script>
+    <script src="@@webRoot/assets/js/vendors/scrollcue.js"></script>
+    <script src="@@webRoot/assets/js/vendors/pricing.js"></script>
+  </body>
+</html>

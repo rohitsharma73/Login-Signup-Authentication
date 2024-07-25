@@ -1,0 +1,49 @@
+// Intl
+
+:root {
+  --iti-hover-color: #f1f5f9;
+  --iti-text-gray: #475569;
+  --iti-border-gray: #e2e8f0;
+  --iti-spacer-horizontal: 16px;
+  --iti-arrow-padding: 16px;
+  --iti-arrow-color: #94a3b8;
+}
+
+[data-bs-theme="dark"] {
+  --iti-hover-color: #1e293b;
+  --iti-text-gray: #475569;
+  --iti-border-gray: #334155;
+  --iti-spacer-horizontal: 16px;
+  --iti-triangle-border: calc(var(--iti-arrow-width) / 2);
+  --iti-arrow-padding: 16px;
+  --iti-arrow-color: #94a3b8;
+}
+
+.iti {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.iti__search-input {
+  width: 100%;
+  border-width: 0;
+  border-radius: 3px;
+  padding: 9px 16px;
+  background-color: $input-bg;
+  color: $input-color;
+}
+
+.iti__selected-country-primary {
+  border-radius: 8px 0px 0px 8px;
+}
+
+.iti__dropdown-content {
+  border-radius: 3px;
+  background-color: $input-bg;
+}
+.iti__search-input {
+  &:focus-visible {
+    outline: 0;
+  }
+}

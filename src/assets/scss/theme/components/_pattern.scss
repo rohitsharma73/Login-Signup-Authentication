@@ -1,0 +1,91 @@
+// Pattern
+
+// Pattern square
+.pattern-square {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../images/pattern/pattern-square.svg);
+        background-position: top center;
+        mask-image: linear-gradient(to top, transparent 35%, black 75%);
+
+        padding: 40px 0px;
+        height: 312px;
+        z-index: -1;
+    }
+}
+
+// Pattern for text
+
+.text-pattern-line {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -22px;
+        background-image: url(../images/pattern/curve.svg);
+        background-repeat: no-repeat;
+        height: 20px;
+        width: 201px;
+    }
+}
+
+// Pattern for background
+
+.bg-pattern {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../images/pattern/pattern-white.svg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        mask-image: linear-gradient(to top, transparent 55%, black 75%);
+        opacity: 0.3;
+    }
+}
+
+// Pattern of line
+
+.line-pattern {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../images/pattern/line-pattern.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+// Shape
+.right-slant-shape {
+    position: relative;
+    &:after {
+        clip-path: polygon(100% 81%, 0% 100%, 100% 100%);
+        background-color: var(--#{$prefix}body-bg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: -1px;
+        content: "";
+        height: 380px;
+        position: absolute;
+        width: 100%;
+    }
+}

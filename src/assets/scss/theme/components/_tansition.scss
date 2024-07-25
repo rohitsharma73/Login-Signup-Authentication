@@ -1,0 +1,86 @@
+// Transitions
+
+// Image zoom
+.zoom-img {
+    border-radius: $border-radius-lg;
+    transform: translateZ(0);
+    overflow: hidden;
+    & img {
+        display: block;
+        transition: transform 0.35s ease-in-out;
+    }
+    &:hover img {
+        transform: scale(1.05);
+    }
+}
+
+// Image overlay
+.img-overlay {
+    position: relative;
+    transition: 0.5s ease;
+    .img-color {
+        position: relative;
+        background-color: var(--#{$prefix}gray-600);
+        transition: 0.5s ease;
+        border-radius: 0.75rem;
+        &:hover img {
+            mix-blend-mode: luminosity;
+            opacity: 0.4;
+            transition: 0.2s ease;
+        }
+    }
+}
+
+// Marquee
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 65px;
+    overflow: hidden;
+    line-height: 4.5;
+    .track {
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 100s linear infinite;
+    }
+    .track-2 {
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee-left 100s linear infinite;
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes marquee-left {
+    to {
+        transform: translateX(0);
+    }
+
+    from {
+        transform: translateX(-50%);
+    }
+}
+
+// Lift
+.lift {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    border-radius: $border-radius-lg;
+
+    &:hover {
+        transform: translateY(-0.4rem);
+        box-shadow: 0 0.25rem 1.25rem rgba(52, 63, 82, 0.1);
+    }
+}
